@@ -11,8 +11,11 @@ import UIKit
 class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     //get json fileNMW
-    var jsonFileString = "Item2Data"
-     let getJson:GetJsonUrl = GetJsonUrl()
+    var jsonFileString = "restaurants"
+    
+    //let getJson:GetJsonUrl = GetJsonUrl()
+    
+    //
     
     @IBOutlet weak var myTableView: UITableView!
     let model:ItemModel = ItemModel()
@@ -21,7 +24,8 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.getJsonFileName()
+      //  self.getJsonFileName()
+       
         
         self.setUpItems()
         
@@ -35,17 +39,19 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-    func getJsonFileName()
-    {
+   // func getJsonFileName()
+   // {
         
        
-        self.getJson.JsonFileName = self.jsonFileString
+        //self.getJson.JsonFileName = self.jsonFileString
+     //   self.getJson.JsonFileName = "restaurants"
+      
         
-    }
+   // }
     
     func setUpItems()
     {
-        
+      self.model.JsonfileName = self.jsonFileString
       self.items = self.model.getItems()
         
     }

@@ -39,6 +39,7 @@
 		B4C3A0E61A22990F00A96225 /* bild-04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0E01A22990F00A96225 /* bild-04@2x.jpg */; };
 		B4C3A0E71A22990F00A96225 /* bild-05@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0E11A22990F00A96225 /* bild-05@2x.jpg */; };
 		B4C3A0E81A22990F00A96225 /* bild-06@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0E21A22990F00A96225 /* bild-06@2x.jpg */; };
+		B4C7191A1A2E60200041307A /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = B4C719191A2E60200041307A /* restaurants.json */; };
 		B4D1F8271A2399CB00D5B3B4 /* WebVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D1F8261A2399CB00D5B3B4 /* WebVideoViewController.swift */; };
 		B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B4D1F8281A23AE6000D5B3B4 /* test.MOV */; };
 		B4D2CDF01A1FFE1200B02E7E /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDEF1A1FFE1200B02E7E /* ItemsViewController.swift */; };
@@ -103,6 +104,7 @@
 		B4C3A0E01A22990F00A96225 /* bild-04@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-04@2x.jpg"; sourceTree = "<group>"; };
 		B4C3A0E11A22990F00A96225 /* bild-05@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-05@2x.jpg"; sourceTree = "<group>"; };
 		B4C3A0E21A22990F00A96225 /* bild-06@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-06@2x.jpg"; sourceTree = "<group>"; };
+		B4C719191A2E60200041307A /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
 		B4D1F8261A2399CB00D5B3B4 /* WebVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebVideoViewController.swift; path = ../WebVideoViewController.swift; sourceTree = "<group>"; };
 		B4D1F8281A23AE6000D5B3B4 /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
 		B4D2CDEF1A1FFE1200B02E7E /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ThaiBuddyGuide2/ItemsViewController.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 			children = (
 				B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */,
 				B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */,
+				B4C719191A2E60200041307A /* restaurants.json */,
 				B4BC1DA41A28CABD008F0A7F /* Item2Data.json */,
 			);
 			name = "Restaurant Group";
@@ -382,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C7191A1A2E60200041307A /* restaurants.json in Resources */,
 				B4BC1DBE1A291340008F0A7F /* first Place2@2x.jpg in Resources */,
 				B4C3A0E61A22990F00A96225 /* bild-04@2x.jpg in Resources */,
 				B4BC1DBF1A291340008F0A7F /* first Place1@2x.jpg in Resources */,

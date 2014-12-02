@@ -14,6 +14,8 @@
 		<string>https://github.com/nipathachaiwong/thaibuddyguide2.git</string>
 		<key>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</key>
 		<string>https://github.com/nipathachaiwong/GuideThailand.git</string>
+		<key>FD753FD36554716B669877993B40ABC2D89E6B03</key>
+		<string>https://github.com/nipathachaiwong/guideThailand_dec3.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ThaiBuddyGuide2.xcodeproj</string>
@@ -22,14 +24,16 @@
 		<key>06DF66546A45A6DB61B59B371746E7C0F14F5B31</key>
 		<string>../../../thaibuddyguide2</string>
 		<key>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</key>
+		<string>../../../GuideThailand</string>
+		<key>FD753FD36554716B669877993B40ABC2D89E6B03</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nipathachaiwong/GuideThailand.git</string>
+	<string>https://github.com/nipathachaiwong/guideThailand_dec3.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</string>
+	<string>FD753FD36554716B669877993B40ABC2D89E6B03</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -39,6 +43,14 @@
 			<string>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GuideThailand</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FD753FD36554716B669877993B40ABC2D89E6B03</string>
+			<key>IDESourceControlWCCName</key>
+			<string>guideThailand_dec3</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

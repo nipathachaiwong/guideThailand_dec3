@@ -10,7 +10,7 @@ import UIKit
 
 class GetJsonUrl: NSObject {
    
-    var JsonUrl = "https://dl.dropboxusercontent.com/u/196547970/QuestionDat.json"
+   // var JsonUrl = "https://dl.dropboxusercontent.com/u/196547970/QuestionDat.json"
     var JsonFileName: String = ""
 }
- 
+
