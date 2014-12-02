@@ -34,12 +34,6 @@ class DetailViewController2: UIViewController{
 
     }
     
-    // side menu var
-    
-   // internal var sideMenu : ENSideMenu?
-   internal var sideMenuAnimationType : ENSideMenuAnimation = .Default
-    var sideMenu : ENSideMenu?
-    var menuTableViewController : MyMenuTableViewController?
     
     var itemString: String?
     var myDetailedImageName: String?
@@ -59,13 +53,10 @@ class DetailViewController2: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //side menu  ewewqewewwq
-        sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: MyMenuTableViewController(), menuPosition:.Left)
         
-        // make navigation bar showing over side menu
-     //  view.bringSubviewToFront(navigationBar)
         
-        //78475443
+     
+    
         
         
         self.itemLabel.text = itemString
@@ -109,9 +100,9 @@ class DetailViewController2: UIViewController{
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //var nextVC: MapViewController = segue.destinationViewController as MapViewController
+       var nextVC: MapViewController = segue.destinationViewController as MapViewController
         
-        // nextVC.itemNamefromDetail = itemString!
+        nextVC.itemNamefromDetail = itemString!
         
         if (segue.identifier == "goToSque"){
             var mapVC: MapViewController = segue.destinationViewController as MapViewController

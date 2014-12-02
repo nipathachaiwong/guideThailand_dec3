@@ -12,6 +12,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     
     //get json fileNMW
     var jsonFileString = "restaurants"
+    var stringNameOfJsonFromHome: String = ""
     
     //let getJson:GetJsonUrl = GetJsonUrl()
     
@@ -25,7 +26,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
       //  self.getJsonFileName()
-       
+       println(stringNameOfJsonFromHome)
         
         self.setUpItems()
         

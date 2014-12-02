@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var r = "restaurants"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +26,11 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //var nextVC: MapViewController = segue.destinationViewController as MapViewController
-        
-        // nextVC.itemNamefromDetail = itemString!
+      
         
         if (segue.identifier == "itemTableVC2Seque"){
-            var itemTableVC2: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
-            
+            var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
+            restaurantVC.stringNameOfJsonFromHome = r
         }
         
     
