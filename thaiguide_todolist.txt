@@ -1,0 +1,54 @@
+TravelGuide to Do
+1. determine what elements are needed in the json file
+note: see detailview story board
+add:
+
+Name
+Name in Thai
+phone
+imageName
+location lat
+location long
+___
+note: use this code to covert string to float
+let numberFormatter = NSNumberFormatter()
+let number = numberFormatter.numberFromString("15.5")
+let numberFloatValue = number.floatValue
+
+println("number is \(numberFloatValue)")
+____
+show in savelist: bool
+
+moreImagesName as a cat cat variable from itemname selected and number
+
+NOTE: morephotoVC imagename is set up the itemName in the json file. Need to have images of the same name
+
+url to youtube videos as string-
+note: urls can be call from two separate json 1. local url    2. remote url. use two tableviews in the same view?
+
+
+2 urls for now : 1. getting there 2. while there ( spoiler alert)
+optional videos : around there ( video of the neighborhood-what you should check out while there : places to shop, restaurants, interesting /historical sites, more stuff that normal tourist wont know about)
+
+option 1: index selected value ( var to save) to be added to saveItem on clickbutton
+option 2: save all above variables into a "saveitem_array" -->key
+
+
+2. determine how data for "ClickSaveItem" to list
+note: using same code as in the to do list -make and delete ( see youtube video) and sample code todoapp.xcodeproj
+
+
+-------
+11/27
+work on json file and import to main project from jsontest project
+
+11/28/
+morephotovc nav bar and nav button
+
+12/1
+back button for each views and sub views
+home page buttons for main vc template
+
+12/2 savebutton array-- use nsuserdefaults
+
+

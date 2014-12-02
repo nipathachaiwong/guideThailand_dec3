@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4D2CDC71A1FCFB000B02E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDC61A1FCFB000B02E7E /* AppDelegate.swift */; };
+		B4D2CDC91A1FCFB000B02E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDC81A1FCFB000B02E7E /* ViewController.swift */; };
+		B4D2CDCC1A1FCFB000B02E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDCA1A1FCFB000B02E7E /* Main.storyboard */; };
+		B4D2CDCE1A1FCFB000B02E7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDCD1A1FCFB000B02E7E /* Images.xcassets */; };
+		B4D2CDD11A1FCFB000B02E7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDCF1A1FCFB000B02E7E /* LaunchScreen.xib */; };
+		B4D2CDDD1A1FCFB000B02E7E /* desciptionforrecopyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDDC1A1FCFB000B02E7E /* desciptionforrecopyTests.swift */; };
+		B4D2CDE71A1FCFC600B02E7E /* ItemsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDE61A1FCFC600B02E7E /* ItemsViewController2.swift */; };
+		B4D2CDEB1A1FCFE300B02E7E /* CustomCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDE81A1FCFE300B02E7E /* CustomCell2.swift */; };
+		B4D2CDEC1A1FCFE300B02E7E /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDE91A1FCFE300B02E7E /* DetailViewController2.swift */; };
+		B4D2CDED1A1FCFE300B02E7E /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDEA1A1FCFE300B02E7E /* item2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4D2CDD71A1FCFB000B02E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D2CDB91A1FCFB000B02E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D2CDC01A1FCFB000B02E7E;
+			remoteInfo = desciptionforrecopy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4D2CDC11A1FCFB000B02E7E /* desciptionforrecopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desciptionforrecopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D2CDC51A1FCFB000B02E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D2CDC61A1FCFB000B02E7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4D2CDC81A1FCFB000B02E7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4D2CDCB1A1FCFB000B02E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4D2CDCD1A1FCFB000B02E7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4D2CDD01A1FCFB000B02E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B4D2CDD61A1FCFB000B02E7E /* desciptionforrecopyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desciptionforrecopyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D2CDDB1A1FCFB000B02E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D2CDDC1A1FCFB000B02E7E /* desciptionforrecopyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desciptionforrecopyTests.swift; sourceTree = "<group>"; };
+		B4D2CDE61A1FCFC600B02E7E /* ItemsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController2.swift; sourceTree = "<group>"; };
+		B4D2CDE81A1FCFE300B02E7E /* CustomCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell2.swift; sourceTree = "<group>"; };
+		B4D2CDE91A1FCFE300B02E7E /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
+		B4D2CDEA1A1FCFE300B02E7E /* item2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4D2CDBE1A1FCFB000B02E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D2CDD31A1FCFB000B02E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4D2CDB81A1FCFB000B02E7E = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDC31A1FCFB000B02E7E /* desciptionforrecopy */,
+				B4D2CDD91A1FCFB000B02E7E /* desciptionforrecopyTests */,
+				B4D2CDC21A1FCFB000B02E7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4D2CDC21A1FCFB000B02E7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDC11A1FCFB000B02E7E /* desciptionforrecopy.app */,
+				B4D2CDD61A1FCFB000B02E7E /* desciptionforrecopyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4D2CDC31A1FCFB000B02E7E /* desciptionforrecopy */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDC61A1FCFB000B02E7E /* AppDelegate.swift */,
+				B4D2CDC81A1FCFB000B02E7E /* ViewController.swift */,
+				B4D2CDE61A1FCFC600B02E7E /* ItemsViewController2.swift */,
+				B4D2CDCA1A1FCFB000B02E7E /* Main.storyboard */,
+				B4D2CDE81A1FCFE300B02E7E /* CustomCell2.swift */,
+				B4D2CDE91A1FCFE300B02E7E /* DetailViewController2.swift */,
+				B4D2CDEA1A1FCFE300B02E7E /* item2.swift */,
+				B4D2CDCD1A1FCFB000B02E7E /* Images.xcassets */,
+				B4D2CDCF1A1FCFB000B02E7E /* LaunchScreen.xib */,
+				B4D2CDC41A1FCFB000B02E7E /* Supporting Files */,
+			);
+			path = desciptionforrecopy;
+			sourceTree = "<group>";
+		};
+		B4D2CDC41A1FCFB000B02E7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDC51A1FCFB000B02E7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4D2CDD91A1FCFB000B02E7E /* desciptionforrecopyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDDC1A1FCFB000B02E7E /* desciptionforrecopyTests.swift */,
+				B4D2CDDA1A1FCFB000B02E7E /* Supporting Files */,
+			);
+			path = desciptionforrecopyTests;
+			sourceTree = "<group>";
+		};
+		B4D2CDDA1A1FCFB000B02E7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDDB1A1FCFB000B02E7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4D2CDC01A1FCFB000B02E7E /* desciptionforrecopy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D2CDE01A1FCFB000B02E7E /* Build configuration list for PBXNativeTarget "desciptionforrecopy" */;
+			buildPhases = (
+				B4D2CDBD1A1FCFB000B02E7E /* Sources */,
+				B4D2CDBE1A1FCFB000B02E7E /* Frameworks */,
+				B4D2CDBF1A1FCFB000B02E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = desciptionforrecopy;
+			productName = desciptionforrecopy;
+			productReference = B4D2CDC11A1FCFB000B02E7E /* desciptionforrecopy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4D2CDD51A1FCFB000B02E7E /* desciptionforrecopyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D2CDE31A1FCFB000B02E7E /* Build configuration list for PBXNativeTarget "desciptionforrecopyTests" */;
+			buildPhases = (
+				B4D2CDD21A1FCFB000B02E7E /* Sources */,
+				B4D2CDD31A1FCFB000B02E7E /* Frameworks */,
+				B4D2CDD41A1FCFB000B02E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D2CDD81A1FCFB000B02E7E /* PBXTargetDependency */,
+			);
+			name = desciptionforrecopyTests;
+			productName = desciptionforrecopyTests;
+			productReference = B4D2CDD61A1FCFB000B02E7E /* desciptionforrecopyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4D2CDB91A1FCFB000B02E7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Thai Buddy Guides";
+				TargetAttributes = {
+					B4D2CDC01A1FCFB000B02E7E = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B4D2CDD51A1FCFB000B02E7E = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B4D2CDC01A1FCFB000B02E7E;
+					};
+				};
+			};
+			buildConfigurationList = B4D2CDBC1A1FCFB000B02E7E /* Build configuration list for PBXProject "desciptionforrecopy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4D2CDB81A1FCFB000B02E7E;
+			productRefGroup = B4D2CDC21A1FCFB000B02E7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4D2CDC01A1FCFB000B02E7E /* desciptionforrecopy */,
+				B4D2CDD51A1FCFB000B02E7E /* desciptionforrecopyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4D2CDBF1A1FCFB000B02E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D2CDCC1A1FCFB000B02E7E /* Main.storyboard in Resources */,
+				B4D2CDD11A1FCFB000B02E7E /* LaunchScreen.xib in Resources */,
+				B4D2CDCE1A1FCFB000B02E7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D2CDD41A1FCFB000B02E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4D2CDBD1A1FCFB000B02E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D2CDE71A1FCFC600B02E7E /* ItemsViewController2.swift in Sources */,
+				B4D2CDED1A1FCFE300B02E7E /* item2.swift in Sources */,
+				B4D2CDEB1A1FCFE300B02E7E /* CustomCell2.swift in Sources */,
+				B4D2CDC91A1FCFB000B02E7E /* ViewController.swift in Sources */,
+				B4D2CDEC1A1FCFE300B02E7E /* DetailViewController2.swift in Sources */,
+				B4D2CDC71A1FCFB000B02E7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D2CDD21A1FCFB000B02E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D2CDDD1A1FCFB000B02E7E /* desciptionforrecopyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4D2CDD81A1FCFB000B02E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D2CDC01A1FCFB000B02E7E /* desciptionforrecopy */;
+			targetProxy = B4D2CDD71A1FCFB000B02E7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4D2CDCA1A1FCFB000B02E7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4D2CDCB1A1FCFB000B02E7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4D2CDCF1A1FCFB000B02E7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4D2CDD01A1FCFB000B02E7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4D2CDDE1A1FCFB000B02E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4D2CDDF1A1FCFB000B02E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4D2CDE11A1FCFB000B02E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = desciptionforrecopy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4D2CDE21A1FCFB000B02E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = desciptionforrecopy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B4D2CDE41A1FCFB000B02E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = desciptionforrecopyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desciptionforrecopy.app/desciptionforrecopy";
+			};
+			name = Debug;
+		};
+		B4D2CDE51A1FCFB000B02E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = desciptionforrecopyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desciptionforrecopy.app/desciptionforrecopy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4D2CDBC1A1FCFB000B02E7E /* Build configuration list for PBXProject "desciptionforrecopy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D2CDDE1A1FCFB000B02E7E /* Debug */,
+				B4D2CDDF1A1FCFB000B02E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D2CDE01A1FCFB000B02E7E /* Build configuration list for PBXNativeTarget "desciptionforrecopy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D2CDE11A1FCFB000B02E7E /* Debug */,
+				B4D2CDE21A1FCFB000B02E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B4D2CDE31A1FCFB000B02E7E /* Build configuration list for PBXNativeTarget "desciptionforrecopyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D2CDE41A1FCFB000B02E7E /* Debug */,
+				B4D2CDE51A1FCFB000B02E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4D2CDB91A1FCFB000B02E7E /* Project object */;
+}

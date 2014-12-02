@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */; };
+		B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE061A1A8B2E007F3CD7 /* ViewController.swift */; };
+		B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */; };
+		B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */; };
+		B446AE1B1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE1A1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift */; };
+		B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */; };
+		B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */; };
+		B46BB2621A1D393800D81FBE /* DetailScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46BB2611A1D393800D81FBE /* DetailScrollVC.swift */; };
+		B4B5D3781A1C829100DEAD0F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B5D3771A1C829100DEAD0F /* MapViewController.swift */; };
+		B4B5D37A1A1C839800DEAD0F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5D3791A1C839800DEAD0F /* MapKit.framework */; };
+		B4B5D37F1A1C893E00DEAD0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */; };
+		B4B5D3811A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */; };
+		B4B5D3871A1CB50400DEAD0F /* audioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B5D3861A1CB50400DEAD0F /* audioVC.swift */; };
+		B4D2CDF01A1FFE1200B02E7E /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDEF1A1FFE1200B02E7E /* ItemsViewController.swift */; };
+		B4D2CDF21A1FFE1800B02E7E /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDF11A1FFE1800B02E7E /* item.swift */; };
+		B4D2CDF61A1FFE2E00B02E7E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDF51A1FFE2E00B02E7E /* CustomCell.swift */; };
+		B4D2CDF81A1FFED300B02E7E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDF71A1FFED300B02E7E /* DetailViewController.swift */; };
+		B4D2CDFB1A1FFF5E00B02E7E /* f2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */; };
+		B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */; };
+		B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDFD1A2009F000B02E7E /* Main.storyboard */; };
+		B4E3E6861A1B3A9800E84243 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */; };
+		B4E3E6871A1B3A9800E84243 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */; };
+		B4E3E6891A1B3C7800E84243 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */; };
+		B4E3E68C1A1B3D0400E84243 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */; };
+		B4E3E68E1A1B3E9900E84243 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E3E68D1A1B3E9900E84243 /* image.png */; };
+		B4E3E6A11A1B51E600E84243 /* CustomCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */; };
+		B4E3E6A21A1B51E600E84243 /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E69E1A1B51E600E84243 /* DetailViewController2.swift */; };
+		B4E3E6A31A1B51E600E84243 /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E69F1A1B51E600E84243 /* item2.swift */; };
+		B4E3E6A41A1B51E600E84243 /* ItemsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6A01A1B51E600E84243 /* ItemsViewController2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B446AE151A1A8B2E007F3CD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B446ADF71A1A8B2E007F3CD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B446ADFE1A1A8B2E007F3CD7;
+			remoteInfo = ThaiBuddyGuide2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B446ADFF1A1A8B2E007F3CD7 /* ThaiBuddyGuide2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiBuddyGuide2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B446AE031A1A8B2E007F3CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B446AE061A1A8B2E007F3CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B446AE0E1A1A8B2E007F3CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B446AE141A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThaiBuddyGuide2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B446AE191A1A8B2E007F3CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B446AE1A1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiBuddyGuide2Tests.swift; sourceTree = "<group>"; };
+		B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat.jpeg; sourceTree = "<group>"; };
+		B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat2.jpeg; sourceTree = "<group>"; };
+		B46BB2611A1D393800D81FBE /* DetailScrollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScrollVC.swift; sourceTree = "<group>"; };
+		B4B5D3771A1C829100DEAD0F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		B4B5D3791A1C839800DEAD0F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testfordirectionaduio.mp3; sourceTree = "<group>"; };
+		B4B5D3861A1CB50400DEAD0F /* audioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = audioVC.swift; path = ../audioVC.swift; sourceTree = "<group>"; };
+		B4D2CDEF1A1FFE1200B02E7E /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ThaiBuddyGuide2/ItemsViewController.swift; sourceTree = "<group>"; };
+		B4D2CDF11A1FFE1800B02E7E /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item.swift; path = ThaiBuddyGuide2/item.swift; sourceTree = "<group>"; };
+		B4D2CDF51A1FFE2E00B02E7E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		B4D2CDF71A1FFED300B02E7E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ThaiBuddyGuide2/tableview1/DetailViewController.swift; sourceTree = "<group>"; };
+		B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "f2@2x.jpg"; path = "ThaiBuddyGuide2/ThaiBuddyGuide2Tests/f2@2x.jpg"; sourceTree = "<group>"; };
+		B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "f3@2x.jpg"; path = "ThaiBuddyGuide2/ThaiBuddyGuide2Tests/f3@2x.jpg"; sourceTree = "<group>"; };
+		B4D2CDFD1A2009F000B02E7E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Base.lproj/back up storyboard for restore/Main.storyboard"; sourceTree = "<group>"; };
+		B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = ../MyNavigationController.swift; sourceTree = "<group>"; };
+		B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = ../MyMenuTableViewController.swift; sourceTree = "<group>"; };
+		B4E3E68D1A1B3E9900E84243 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell2.swift; path = tableview2/CustomCell2.swift; sourceTree = "<group>"; };
+		B4E3E69E1A1B51E600E84243 /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController2.swift; path = tableview2/DetailViewController2.swift; sourceTree = "<group>"; };
+		B4E3E69F1A1B51E600E84243 /* item2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item2.swift; path = tableview2/item2.swift; sourceTree = "<group>"; };
+		B4E3E6A01A1B51E600E84243 /* ItemsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController2.swift; path = tableview2/ItemsViewController2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B446ADFC1A1A8B2E007F3CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B5D37F1A1C893E00DEAD0F /* AVFoundation.framework in Frameworks */,
+				B4B5D37A1A1C839800DEAD0F /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B446AE111A1A8B2E007F3CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B446ADF61A1A8B2E007F3CD7 = {
+			isa = PBXGroup;
+			children = (
+				B46BB2611A1D393800D81FBE /* DetailScrollVC.swift */,
+				B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */,
+				B4B5D3791A1C839800DEAD0F /* MapKit.framework */,
+				B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */,
+				B446AE171A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests */,
+				B446AE001A1A8B2E007F3CD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B446AE001A1A8B2E007F3CD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B446ADFF1A1A8B2E007F3CD7 /* ThaiBuddyGuide2.app */,
+				B446AE141A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDEE1A1FFDC100B02E7E /* tablev */,
+				B46BB25E1A1D339A00D81FBE /* Main VC */,
+				B4E3E6941A1B4F4700E84243 /* tableview Restaurants */,
+				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
+				B4E3E68A1A1B3CC200E84243 /* SideBar */,
+				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
+			);
+			path = ThaiBuddyGuide2;
+			sourceTree = "<group>";
+		};
+		B446AE021A1A8B2E007F3CD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */,
+				B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */,
+				B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */,
+				B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */,
+				B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */,
+				B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */,
+				B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */,
+				B446AE031A1A8B2E007F3CD7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B446AE171A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B446AE1A1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift */,
+				B446AE181A1A8B2E007F3CD7 /* Supporting Files */,
+			);
+			path = ThaiBuddyGuide2Tests;
+			sourceTree = "<group>";
+		};
+		B446AE181A1A8B2E007F3CD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B446AE191A1A8B2E007F3CD7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B46BB25E1A1D339A00D81FBE /* Main VC */ = {
+			isa = PBXGroup;
+			children = (
+				B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */,
+				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
+			);
+			name = "Main VC";
+			sourceTree = "<group>";
+		};
+		B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4B5D3861A1CB50400DEAD0F /* audioVC.swift */,
+				B4D2CDFF1A2158E700B02E7E /* GoThereView */,
+			);
+			name = DetailViewHelpers;
+			sourceTree = "<group>";
+		};
+		B4D2CDEE1A1FFDC100B02E7E /* tablev */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2CDFD1A2009F000B02E7E /* Main.storyboard */,
+				B4D2CDF51A1FFE2E00B02E7E /* CustomCell.swift */,
+				B4D2CDF71A1FFED300B02E7E /* DetailViewController.swift */,
+				B4D2CDF11A1FFE1800B02E7E /* item.swift */,
+				B4D2CDEF1A1FFE1200B02E7E /* ItemsViewController.swift */,
+			);
+			name = tablev;
+			sourceTree = "<group>";
+		};
+		B4D2CDFF1A2158E700B02E7E /* GoThereView */ = {
+			isa = PBXGroup;
+			children = (
+				B4B5D3771A1C829100DEAD0F /* MapViewController.swift */,
+			);
+			name = GoThereView;
+			sourceTree = "<group>";
+		};
+		B4E3E68A1A1B3CC200E84243 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */,
+				B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */,
+				B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */,
+				B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */,
+				B4E3E68D1A1B3E9900E84243 /* image.png */,
+			);
+			name = SideBar;
+			sourceTree = "<group>";
+		};
+		B4E3E6941A1B4F4700E84243 /* tableview Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */,
+				B4E3E69E1A1B51E600E84243 /* DetailViewController2.swift */,
+				B4E3E69F1A1B51E600E84243 /* item2.swift */,
+				B4E3E6A01A1B51E600E84243 /* ItemsViewController2.swift */,
+			);
+			name = "tableview Restaurants";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B446ADFE1A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B446AE1E1A1A8B2E007F3CD7 /* Build configuration list for PBXNativeTarget "ThaiBuddyGuide2" */;
+			buildPhases = (
+				B446ADFB1A1A8B2E007F3CD7 /* Sources */,
+				B446ADFC1A1A8B2E007F3CD7 /* Frameworks */,
+				B446ADFD1A1A8B2E007F3CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThaiBuddyGuide2;
+			productName = ThaiBuddyGuide2;
+			productReference = B446ADFF1A1A8B2E007F3CD7 /* ThaiBuddyGuide2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B446AE131A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B446AE211A1A8B2E007F3CD7 /* Build configuration list for PBXNativeTarget "ThaiBuddyGuide2Tests" */;
+			buildPhases = (
+				B446AE101A1A8B2E007F3CD7 /* Sources */,
+				B446AE111A1A8B2E007F3CD7 /* Frameworks */,
+				B446AE121A1A8B2E007F3CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B446AE161A1A8B2E007F3CD7 /* PBXTargetDependency */,
+			);
+			name = ThaiBuddyGuide2Tests;
+			productName = ThaiBuddyGuide2Tests;
+			productReference = B446AE141A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B446ADF71A1A8B2E007F3CD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Thai Buddy Guides";
+				TargetAttributes = {
+					B446ADFE1A1A8B2E007F3CD7 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B446AE131A1A8B2E007F3CD7 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B446ADFE1A1A8B2E007F3CD7;
+					};
+				};
+			};
+			buildConfigurationList = B446ADFA1A1A8B2E007F3CD7 /* Build configuration list for PBXProject "ThaiBuddyGuide2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B446ADF61A1A8B2E007F3CD7;
+			productRefGroup = B446AE001A1A8B2E007F3CD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B446ADFE1A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */,
+				B446AE131A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B446ADFD1A1A8B2E007F3CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */,
+				B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */,
+				B4B5D3811A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 in Resources */,
+				B4D2CDFB1A1FFF5E00B02E7E /* f2@2x.jpg in Resources */,
+				B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */,
+				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
+				B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */,
+				B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */,
+				B4E3E68E1A1B3E9900E84243 /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B446AE121A1A8B2E007F3CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B446ADFB1A1A8B2E007F3CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46BB2621A1D393800D81FBE /* DetailScrollVC.swift in Sources */,
+				B4E3E6A41A1B51E600E84243 /* ItemsViewController2.swift in Sources */,
+				B4B5D3871A1CB50400DEAD0F /* audioVC.swift in Sources */,
+				B4D2CDF61A1FFE2E00B02E7E /* CustomCell.swift in Sources */,
+				B4D2CDF21A1FFE1800B02E7E /* item.swift in Sources */,
+				B4E3E6A31A1B51E600E84243 /* item2.swift in Sources */,
+				B4E3E6A11A1B51E600E84243 /* CustomCell2.swift in Sources */,
+				B4E3E6861A1B3A9800E84243 /* ENSideMenu.swift in Sources */,
+				B4D2CDF81A1FFED300B02E7E /* DetailViewController.swift in Sources */,
+				B4E3E6891A1B3C7800E84243 /* MyNavigationController.swift in Sources */,
+				B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */,
+				B4E3E68C1A1B3D0400E84243 /* MyMenuTableViewController.swift in Sources */,
+				B4D2CDF01A1FFE1200B02E7E /* ItemsViewController.swift in Sources */,
+				B4E3E6A21A1B51E600E84243 /* DetailViewController2.swift in Sources */,
+				B4E3E6871A1B3A9800E84243 /* ENSideMenuNavigationController.swift in Sources */,
+				B4B5D3781A1C829100DEAD0F /* MapViewController.swift in Sources */,
+				B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B446AE101A1A8B2E007F3CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B446AE1B1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B446AE161A1A8B2E007F3CD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B446ADFE1A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */;
+			targetProxy = B446AE151A1A8B2E007F3CD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B446AE0E1A1A8B2E007F3CD7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B446AE1C1A1A8B2E007F3CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B446AE1D1A1A8B2E007F3CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B446AE1F1A1A8B2E007F3CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThaiBuddyGuide2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B446AE201A1A8B2E007F3CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThaiBuddyGuide2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B446AE221A1A8B2E007F3CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThaiBuddyGuide2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThaiBuddyGuide2.app/ThaiBuddyGuide2";
+			};
+			name = Debug;
+		};
+		B446AE231A1A8B2E007F3CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThaiBuddyGuide2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThaiBuddyGuide2.app/ThaiBuddyGuide2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B446ADFA1A1A8B2E007F3CD7 /* Build configuration list for PBXProject "ThaiBuddyGuide2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B446AE1C1A1A8B2E007F3CD7 /* Debug */,
+				B446AE1D1A1A8B2E007F3CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B446AE1E1A1A8B2E007F3CD7 /* Build configuration list for PBXNativeTarget "ThaiBuddyGuide2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B446AE1F1A1A8B2E007F3CD7 /* Debug */,
+				B446AE201A1A8B2E007F3CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B446AE211A1A8B2E007F3CD7 /* Build configuration list for PBXNativeTarget "ThaiBuddyGuide2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B446AE221A1A8B2E007F3CD7 /* Debug */,
+				B446AE231A1A8B2E007F3CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B446ADF71A1A8B2E007F3CD7 /* Project object */;
+}
