@@ -31,13 +31,13 @@ class ViewController: UIViewController {
         
         if (segue.identifier == "restaurantSeque"){
             var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
-            restaurantVC.stringNameOfJsonFromHome = r
+            restaurantVC.jsonFileString = r
         }
         
         
         if (segue.identifier == "slightSeque"){
             var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
-            restaurantVC.stringNameOfJsonFromHome = s
+            restaurantVC.jsonFileString = s
         }
         
     
