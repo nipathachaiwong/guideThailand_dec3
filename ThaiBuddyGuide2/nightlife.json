@@ -1,0 +1,79 @@
+ [
+  {
+  "name": "nightlife ",
+  "nameInThai": "_design/admin",
+  "hours": "9:00 - 20:00",
+  "phone": "432421412",
+  "imageName": "wat.jpeg",
+  "category": "fun",
+  "lat":13.7334218,
+  "long":100.6922059,
+  "urlGetThereVid": "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0",
+  "urlAtLocationVid": "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0",
+  "moreImages":["True.jpeg", "False"],
+  "descriptionstring": " 2dsad asd dasad asd das daad asd das daad asd das daad asd das daad asd das da das sa d sad a590a68c"
+  },
+  {
+  "name": "2shoppingSequen",
+  "nameInThai": "_design/admin",
+  "hours": "10:00 - 18:00",
+  "phone": "3241144",
+  "imageName": "wat.jpeg",
+  "category": "for kids",
+  "lat":13.7334218,
+  "long":100.6922059,
+  "urlGetThereVid": "http://www.youtube.com/embed/6vk4UrJR8WM?list=PL0wGKPc4_PKNsEa_QVEQM0J5a2UJ1sNHc&amp;controls=0&amp;showinfo=0",
+  "urlAtLocationVid": "http://www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0",
+  "moreImages":["True.jpeg", "False"],
+  "descriptionstring": " 2dsad ad asd das daad asd das daad asd das daad asd das daad asd das daasd das das sa d sad a590a68c"
+  },
+  
+  {
+  "name": "shoppingSequeon",
+  "nameInThai": "_design/admin",
+  "hours": "10:00 - 18:00",
+  "phone": "3241144",
+  "imageName": "wat.jpeg",
+  "category": "for kids",
+  "lat":13.7334218,
+  "long":100.6922059,
+  "urlGetThereVid": "http://www.youtube.com/embed/6vk4UrJR8WM?list=PL0wGKPc4_PKNsEa_QVEQM0J5a2UJ1sNHc&amp;controls=0&amp;showinfo=0",
+  "urlAtLocationVid": "http://www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0",
+  "moreImages":["True.jpeg", "False"],
+  "descriptionstring": " 2dsad ad asd das daad asd das daad asd das daad asd das daad asd das daasd das das sa d sad a590a68c"
+  }
+  ,
+  
+  {
+  "name": "2nd location",
+  "nameInThai": "_design/admin",
+  "hours": "10:00 - 18:00",
+  "phone": "3241144",
+  "imageName": "wat.jpeg",
+  "category": "for kids",
+  "lat":13.7334218,
+  "long":100.6922059,
+  "urlGetThereVid": "http://www.youtube.com/embed/6vk4UrJR8WM?list=PL0wGKPc4_PKNsEa_QVEQM0J5a2UJ1sNHc&amp;controls=0&amp;showinfo=0",
+  "urlAtLocationVid": "http://www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0",
+  "moreImages":["True.jpeg", "False"],
+  "descriptionstring": " 2dsad ad asd das daad asd das daad asd das daad asd das daad asd das daasd das das sa d sad a590a68c"
+  }
+  ,
+  
+  {
+  "name": "2nd location",
+  "nameInThai": "_design/admin",
+  "hours": "10:00 - 18:00",
+  "phone": "3241144",
+  "imageName": "wat.jpeg",
+  "category": "for kids",
+  "lat":13.7334218,
+  "long":100.6922059,
+  "urlGetThereVid": "http://www.youtube.com/embed/6vk4UrJR8WM?list=PL0wGKPc4_PKNsEa_QVEQM0J5a2UJ1sNHc&amp;controls=0&amp;showinfo=0",
+  "urlAtLocationVid": "http://www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0",
+  "moreImages":["True.jpeg", "False"],
+  "descriptionstring": " 2dsad ad asd das daad asd das daad asd das daad asd das daad asd das daasd das das sa d sad a590a68c"
+  }
+  
+  
+  ]

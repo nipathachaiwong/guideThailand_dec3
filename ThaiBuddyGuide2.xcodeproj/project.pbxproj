@@ -42,6 +42,9 @@
 		B4C719211A2E6CFC0041307A /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C719201A2E6CFC0041307A /* MyNavigationController.swift */; };
 		B4C719231A2E6D070041307A /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C719221A2E6D070041307A /* MyMenuTableViewController.swift */; };
 		B4C719251A2E71610041307A /* slights.json in Resources */ = {isa = PBXBuildFile; fileRef = B4C719241A2E71610041307A /* slights.json */; };
+		B4C719271A2E737B0041307A /* shopping.json in Resources */ = {isa = PBXBuildFile; fileRef = B4C719261A2E737B0041307A /* shopping.json */; };
+		B4C719291A2E74A20041307A /* massage.json in Resources */ = {isa = PBXBuildFile; fileRef = B4C719281A2E74A20041307A /* massage.json */; };
+		B4C7192B1A2E74BB0041307A /* nightlife.json in Resources */ = {isa = PBXBuildFile; fileRef = B4C7192A1A2E74BB0041307A /* nightlife.json */; };
 		B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B4D1F8281A23AE6000D5B3B4 /* test.MOV */; };
 		B4D2CDFB1A1FFF5E00B02E7E /* f2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */; };
 		B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */; };
@@ -102,6 +105,9 @@
 		B4C719201A2E6CFC0041307A /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = Rest_DetailViewSubViews/MyNavigationController.swift; sourceTree = SOURCE_ROOT; };
 		B4C719221A2E6D070041307A /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = Rest_DetailViewSubViews/MyMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B4C719241A2E71610041307A /* slights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = slights.json; sourceTree = "<group>"; };
+		B4C719261A2E737B0041307A /* shopping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopping.json; sourceTree = "<group>"; };
+		B4C719281A2E74A20041307A /* massage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = massage.json; sourceTree = "<group>"; };
+		B4C7192A1A2E74BB0041307A /* nightlife.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nightlife.json; sourceTree = "<group>"; };
 		B4D1F8281A23AE6000D5B3B4 /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
 		B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "f2@2x.jpg"; path = "ThaiBuddyGuide2/ThaiBuddyGuide2Tests/f2@2x.jpg"; sourceTree = "<group>"; };
 		B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "f3@2x.jpg"; path = "ThaiBuddyGuide2/ThaiBuddyGuide2Tests/f3@2x.jpg"; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 		B40362EF1A2E1C13001F4232 /* Global Class Group */ = {
 			isa = PBXGroup;
 			children = (
+				B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */,
+				B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */,
 				B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */,
 				B4BC1DA01A28C8F3008F0A7F /* Item2.swift */,
 				B4BC1DA21A28C9C0008F0A7F /* ItemModel.swift */,
@@ -169,7 +177,6 @@
 			children = (
 				B4D2CDFD1A2009F000B02E7E /* Main.storyboard */,
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
-				B4E3E6941A1B4F4700E84243 /* Restaurant Group */,
 				B40362EF1A2E1C13001F4232 /* Global Class Group */,
 				B4C7191B1A2E6B150041307A /* JsonFiles */,
 				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
@@ -266,6 +273,9 @@
 			children = (
 				B4C719191A2E60200041307A /* restaurants.json */,
 				B4C719241A2E71610041307A /* slights.json */,
+				B4C719261A2E737B0041307A /* shopping.json */,
+				B4C7192A1A2E74BB0041307A /* nightlife.json */,
+				B4C719281A2E74A20041307A /* massage.json */,
 			);
 			name = JsonFiles;
 			sourceTree = "<group>";
@@ -279,15 +289,6 @@
 				B4C719221A2E6D070041307A /* MyMenuTableViewController.swift */,
 			);
 			name = SideBar;
-			sourceTree = "<group>";
-		};
-		B4E3E6941A1B4F4700E84243 /* Restaurant Group */ = {
-			isa = PBXGroup;
-			children = (
-				B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */,
-				B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */,
-			);
-			name = "Restaurant Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,12 +378,14 @@
 				B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */,
 				B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */,
 				B4C3A0E71A22990F00A96225 /* bild-05@2x.jpg in Resources */,
+				B4C719271A2E737B0041307A /* shopping.json in Resources */,
 				B4D2CDFB1A1FFF5E00B02E7E /* f2@2x.jpg in Resources */,
 				B4BC1DB81A291246008F0A7F /* first Place4@2x.jpg in Resources */,
 				B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */,
 				B4BC1DAF1A290D0F008F0A7F /* 2nd location.mp3 in Resources */,
 				B47AFCCD1A27368A00516A97 /* thaiguide_todolist.txt in Resources */,
 				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
+				B4C7192B1A2E74BB0041307A /* nightlife.json in Resources */,
 				B4BC1DB71A291246008F0A7F /* first Place5@2x.jpg in Resources */,
 				B4BC1DB01A290D0F008F0A7F /* first Place.mp3 in Resources */,
 				B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */,
@@ -390,6 +393,7 @@
 				B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */,
 				B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */,
 				B4C3A0E31A22990F00A96225 /* bild-01@2x.jpg in Resources */,
+				B4C719291A2E74A20041307A /* massage.json in Resources */,
 				B4C3A0E41A22990F00A96225 /* bild-02@2x.jpg in Resources */,
 				B4BC1DB91A291246008F0A7F /* first Place3@2x.jpg in Resources */,
 				B4C3A0E51A22990F00A96225 /* bild-03@2x.jpg in Resources */,

@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     var r = "restaurants"
     var s = "slights"
+    var shop = "shopping"
+    var m =  "massage"
+    var n = "nightlife"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +37,24 @@ class ViewController: UIViewController {
             restaurantVC.jsonFileString = r
         }
         
-        
         if (segue.identifier == "slightSeque"){
             var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
             restaurantVC.jsonFileString = s
         }
+        
+        if (segue.identifier == "shoppingSeque"){
+            var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
+            restaurantVC.jsonFileString = shop
+        }
+        if (segue.identifier == "massageSeque"){
+            var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
+            restaurantVC.jsonFileString = m
+        }
+        if (segue.identifier == "nightSeque"){
+            var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
+            restaurantVC.jsonFileString = n
+        }
+        
         
     
 //   @IBAction func toggleSideMenu(sender: AnyObject) {
