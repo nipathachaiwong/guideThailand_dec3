@@ -39,15 +39,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-   // func getJsonFileName()
-   // {
-        
-       
-        //self.getJson.JsonFileName = self.jsonFileString
-     //   self.getJson.JsonFileName = "restaurants"
-      
-        
-   // }
+
     
     func setUpItems()
     {
@@ -66,8 +58,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         return items.count
     }
     
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+   
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
