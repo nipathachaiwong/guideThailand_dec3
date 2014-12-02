@@ -8,6 +8,7 @@
         <!--Items View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ViewController2" id="vXZ-lx-hvc" customClass="ItemsViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ygy-iR-OaZ"/>
@@ -58,7 +59,6 @@
                         <outlet property="myTableView" destination="oSq-yz-Cil" id="ZYd-tH-JWY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-965.5" y="965.5"/>
         </scene>
@@ -126,20 +126,23 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4f-eg-f0v">
                                 <rect key="frame" x="38" y="85" width="92" height="126"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Restaurants">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="goToViewControler1:" destination="PV9-tc-XUh" eventType="touchUpInside" id="rXg-kh-oSY"/>
-                                    <segue destination="vh3-aM-RWl" kind="modal" identifier="itemTableVC2Seque" id="cJG-zk-Sif"/>
+                                    <segue destination="vh3-aM-RWl" kind="modal" identifier="restaurantSeque" id="cJG-zk-Sif"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxM-Ox-eVM">
                                 <rect key="frame" x="196" y="85" width="92" height="126"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Slights">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vh3-aM-RWl" kind="modal" identifier="slightSeque" id="Tde-Yd-Lww"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQe-eT-PSq">
                                 <rect key="frame" x="114" y="233" width="92" height="126"/>
@@ -241,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Uh-6D-MLh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1545.5" y="971.5"/>
+            <point key="canvasLocation" x="-502.5" y="216.5"/>
         </scene>
         <!--Detail View Controller2-->
         <scene sceneID="AYi-jY-xNo">
@@ -619,4 +622,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Tde-Yd-Lww"/>
+    </inferredMetricsTieBreakers>
 </document>

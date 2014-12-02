@@ -19,7 +19,6 @@
 		B4B5D37F1A1C893E00DEAD0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */; };
 		B4BC1DA11A28C8F3008F0A7F /* Item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DA01A28C8F3008F0A7F /* Item2.swift */; };
 		B4BC1DA31A28C9C0008F0A7F /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DA21A28C9C0008F0A7F /* ItemModel.swift */; };
-		B4BC1DA51A28CABD008F0A7F /* Item2Data.json in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DA41A28CABD008F0A7F /* Item2Data.json */; };
 		B4BC1DA71A28ED47008F0A7F /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */; };
 		B4BC1DA91A28EEA9008F0A7F /* ItemsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */; };
 		B4BC1DAF1A290D0F008F0A7F /* 2nd location.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */; };
@@ -42,6 +41,7 @@
 		B4C7191F1A2E6CE30041307A /* WebVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7191E1A2E6CE30041307A /* WebVideoViewController.swift */; };
 		B4C719211A2E6CFC0041307A /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C719201A2E6CFC0041307A /* MyNavigationController.swift */; };
 		B4C719231A2E6D070041307A /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C719221A2E6D070041307A /* MyMenuTableViewController.swift */; };
+		B4C719251A2E71610041307A /* slights.json in Resources */ = {isa = PBXBuildFile; fileRef = B4C719241A2E71610041307A /* slights.json */; };
 		B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B4D1F8281A23AE6000D5B3B4 /* test.MOV */; };
 		B4D2CDFB1A1FFF5E00B02E7E /* f2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */; };
 		B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */; };
@@ -79,7 +79,6 @@
 		B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B4BC1DA01A28C8F3008F0A7F /* Item2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item2.swift; sourceTree = "<group>"; };
 		B4BC1DA21A28C9C0008F0A7F /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
-		B4BC1DA41A28CABD008F0A7F /* Item2Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Item2Data.json; sourceTree = "<group>"; };
 		B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
 		B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController2.swift; sourceTree = "<group>"; };
 		B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2nd location.mp3"; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		B4C7191E1A2E6CE30041307A /* WebVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebVideoViewController.swift; path = Rest_DetailViewSubViews/WebVideoViewController.swift; sourceTree = SOURCE_ROOT; };
 		B4C719201A2E6CFC0041307A /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = Rest_DetailViewSubViews/MyNavigationController.swift; sourceTree = SOURCE_ROOT; };
 		B4C719221A2E6D070041307A /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = Rest_DetailViewSubViews/MyMenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		B4C719241A2E71610041307A /* slights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = slights.json; sourceTree = "<group>"; };
 		B4D1F8281A23AE6000D5B3B4 /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
 		B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "f2@2x.jpg"; path = "ThaiBuddyGuide2/ThaiBuddyGuide2Tests/f2@2x.jpg"; sourceTree = "<group>"; };
 		B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "f3@2x.jpg"; path = "ThaiBuddyGuide2/ThaiBuddyGuide2Tests/f3@2x.jpg"; sourceTree = "<group>"; };
@@ -265,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				B4C719191A2E60200041307A /* restaurants.json */,
-				B4BC1DA41A28CABD008F0A7F /* Item2Data.json */,
+				B4C719241A2E71610041307A /* slights.json */,
 			);
 			name = JsonFiles;
 			sourceTree = "<group>";
@@ -388,7 +388,6 @@
 				B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */,
 				B4BC1DB61A291246008F0A7F /* first Place6@2x.jpg in Resources */,
 				B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */,
-				B4BC1DA51A28CABD008F0A7F /* Item2Data.json in Resources */,
 				B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */,
 				B4C3A0E31A22990F00A96225 /* bild-01@2x.jpg in Resources */,
 				B4C3A0E41A22990F00A96225 /* bild-02@2x.jpg in Resources */,
@@ -396,6 +395,7 @@
 				B4C3A0E51A22990F00A96225 /* bild-03@2x.jpg in Resources */,
 				B4C3A0E81A22990F00A96225 /* bild-06@2x.jpg in Resources */,
 				B4E3E68E1A1B3E9900E84243 /* image.png in Resources */,
+				B4C719251A2E71610041307A /* slights.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

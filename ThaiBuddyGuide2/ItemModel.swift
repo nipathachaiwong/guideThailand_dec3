@@ -67,10 +67,7 @@ class ItemModel: NSObject {
         items.append(q)
         }
         
-        for element in items {
-            println(element)
-        }
-        
+    
     
         
         // Return list of question objects        
