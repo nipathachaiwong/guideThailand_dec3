@@ -18,32 +18,10 @@ class ViewController: UIViewController {
     
     //test save item info
     @IBAction func saveItemInfoButton(sender: AnyObject) {
-        
-        let def = NSUserDefaults.standardUserDefaults()
+       //working code
         /*
-        var key = "itemList"
-        
-        
-        
-        var array1: [NSString] = [NSString]()
-        
-        
-        
-        array1.append("value 1")
-        array1.append("value 2")
+        let def = NSUserDefaults.standardUserDefaults()
 
-        
-        
-        //save
-        
-        var defaults = NSUserDefaults.standardUserDefaults()
-        
-        defaults.setObject(array1, forKey: key)
-        
-        defaults.synchronize()
-        
-println("savebutton clicked")
-*/
         
           var defaults = NSUserDefaults.standardUserDefaults()
         
@@ -55,7 +33,18 @@ println("savebutton clicked")
         
         var myarray : NSArray = def.objectForKey("key") as NSArray
         println(myarray)
+*/
         
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var jo : [NSObject : AnyObject] = [
+            "a" : "1.0",
+            "b" : "2.0"
+        ]
+        let akey = "aKey"
+        userDefaults.setObject(jo, forKey: akey)
+        var isOk = userDefaults.synchronize()
+        var data0 = userDefaults.dictionaryForKey(akey)
+        println(data0)
     }
     
     
