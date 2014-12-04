@@ -73,13 +73,13 @@ class DetailViewController2: UIViewController{
          scrollView.contentSize = CGSize(width: CGRectGetWidth(view.bounds), height: CGRectGetHeight(view.bounds) * 1.5)
         scrollView.bounces = false
         
-        println(itemString)
-        println(phoneString)
+       // println(itemString)
+        //println(phoneString)
         println(latCord)
         println(longCord)
-        println("got here"+itemString!)
-        println(urlGetThereVidString)
-        println("in detailvc"+urlAtLocationVidString!)
+       // println("got here"+itemString!)
+       // println(urlGetThereVidString)
+       // println("in detailvc"+urlAtLocationVidString!)
         
     }
 

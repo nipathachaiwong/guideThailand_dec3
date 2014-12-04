@@ -14,9 +14,10 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     //var jsonFileString = "restaurants"
     var jsonFileString: String = ""
     
-    //let getJson:GetJsonUrl = GetJsonUrl()
+   //test arrayto save data
+    var SavedItemModelInstance:SavedItemModel = SavedItemModel()
+    var arrayforSaveData:[Item2] = [Item2]()
     
-    //
     
     @IBOutlet weak var myTableView: UITableView!
     let model:ItemModel = ItemModel()
@@ -104,11 +105,22 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         
         self.presentViewController(detailedViewController, animated: true, completion: nil)
         
+        //println(item)
+        //println(indexPath.row)
+        
+        //test to saveditem array
+        self.arrayforSaveData.append(item)
+        // add the selected item to the array  test
+        self.SavedItemModelInstance.itemsSaveArray.append(item)
+        
+        println(self.SavedItemModelInstance.itemsSaveArray)
+        
+      
     }
     // TO DO
     //   1. Arrayofitemslike saved to nsuserdefaults-
     
- 
+
     
 }
 

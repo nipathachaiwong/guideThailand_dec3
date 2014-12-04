@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var m =  "massage"
     var n = "nightlife"
     //test
-     var saveItemObj:SavedItemModel = SavedItemModel()
+   //  var saveItemObj:SavedItemModel = SavedItemModel()
     //test save item info
     @IBAction func saveItemInfoButton(sender: AnyObject) {
        //working code
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         var myarray : NSArray = def.objectForKey("key") as NSArray
         println(myarray)
 */
-        self.saveItemObj.saveItemToDefaults()
+  //      self.saveItemObj.saveItemToDefaults()
        
 
      
