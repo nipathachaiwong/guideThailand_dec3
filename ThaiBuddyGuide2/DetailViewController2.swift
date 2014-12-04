@@ -146,6 +146,37 @@ class DetailViewController2: UIViewController{
     }
 
     @IBAction func saveItemButton(sender: AnyObject) {
+        
+        var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        var itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
+        
+        var dataSet:NSMutableDictionary = NSMutableDictionary()
+        dataSet.setObject(titleTextField.text, forKey: "itemTitel")
+        dataSet.setObject(notesTextView.text, forKey: "itemNote")
+        
+        if (itemList){ // data already available
+            var newMutableList:NSMutableArray = NSMutableArray();
+            
+            for dict:AnyObject in itemList!{
+                newMutableList.addObject(dict as NSDictionary)
+            }
+            
+            userDefaults.removeObjectForKey("itemList")
+            newMutableList.addObject(dataSet)
+            userDefaults.setObject(newMutableList, forKey: "itemList")
+            
+            
+        }else{ // This is the first todo item in the list
+            userDefaults.removeObjectForKey("itemList")
+            itemList = NSMutableArray()
+            itemList!.addObject(dataSet)
+            userDefaults.setObject(itemList, forKey: "itemList")
+        }
+        
+        userDefaults.synchronize()
+        
+        self.navigationController.popToRootViewControllerAnimated(true)
     }
     /*
     // MARK: - Navigation
