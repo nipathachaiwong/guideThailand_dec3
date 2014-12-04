@@ -152,8 +152,12 @@ class DetailViewController2: UIViewController{
         var itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
         
         var dataSet:NSMutableDictionary = NSMutableDictionary()
-        dataSet.setObject(titleTextField.text, forKey: "itemTitel")
-        dataSet.setObject(notesTextView.text, forKey: "itemNote")
+        dataSet.setObject(itemString, forKey: "name")
+        dataSet.setObject(nameInThaiString, forKey: "nameInThai")
+        
+        
+  
+
         
         if (itemList){ // data already available
             var newMutableList:NSMutableArray = NSMutableArray();
