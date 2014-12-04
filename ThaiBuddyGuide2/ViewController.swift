@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     var shop = "shopping"
     var m =  "massage"
     var n = "nightlife"
-    
+    //test
+     var saveItemObj:SavedItemModel = SavedItemModel()
     //test save item info
     @IBAction func saveItemInfoButton(sender: AnyObject) {
        //working code
@@ -34,17 +35,10 @@ class ViewController: UIViewController {
         var myarray : NSArray = def.objectForKey("key") as NSArray
         println(myarray)
 */
-        
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        var jo : [NSObject : AnyObject] = [
-            "a" : "1.0",
-            "b" : "2.0"
-        ]
-        let akey = "aKey"
-        userDefaults.setObject(jo, forKey: akey)
-        var isOk = userDefaults.synchronize()
-        var data0 = userDefaults.dictionaryForKey(akey)
-        println(data0)
+        self.saveItemObj.saveItemToDefaults()
+       
+
+     
     }
     
     
