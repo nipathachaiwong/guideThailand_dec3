@@ -128,16 +128,12 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
             "descriptionstring":item.descriptiontext
             
         ]
-        //test to saveditem array
-        self.arrayforSaveData.append(item)
-        // add the selected item to the array  test
+       
        
       
         
-        println(items[indexPath.row])
-        for name in self.arrayforSaveData {
-            
-            println(self.arrayforSaveData)
+       
+      
             
             //nsuserdefaults
             NSUserDefaults.standardUserDefaults().setObject(arrayAsDictionary, forKey: "savedItemTest")
@@ -150,7 +146,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
             
              self.presentViewController(detailedViewController, animated: true, completion: nil)
             
-        }
+        
 
         
       
