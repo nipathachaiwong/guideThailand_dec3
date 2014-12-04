@@ -5,96 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Items View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController storyboardIdentifier="ViewController2" id="vXZ-lx-hvc" customClass="ItemsViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ygy-iR-OaZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="9mJ-Nv-YBX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oSq-yz-Cil">
-                                <rect key="frame" x="0.0" y="63" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="9S1-O1-jnf" customClass="CustomCell" customModule="ThaiBuddyGuide2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9S1-O1-jnf" id="cPg-VT-uub">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wND-Wq-Bay">
-                                                    <rect key="frame" x="24" y="5" width="193" height="54"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4iJ-d2-nML">
-                                                    <rect key="frame" x="202" y="7" width="110" height="60"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="label" destination="wND-Wq-Bay" id="Kmz-fo-L5C"/>
-                                            <outlet property="myImageView" destination="4iJ-d2-nML" id="7W3-VE-8bv"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="3uB-zh-BeX"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="cUP-3y-PKI"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="myTableView" destination="oSq-yz-Cil" id="ZYd-tH-JWY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-965.5" y="965.5"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="jPG-NE-XYm">
-            <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="gvz-yT-eRk" customClass="DetailViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aHe-EV-twR"/>
-                        <viewControllerLayoutGuide type="bottom" id="EDB-Pb-LBS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HeC-W8-B1R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvw-Xc-85C">
-                                <rect key="frame" x="102" y="306" width="124" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lP7-eA-aSG">
-                                <rect key="frame" x="40" y="20" width="240" height="128"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="itemLabel" destination="Tvw-Xc-85C" id="fQh-Gs-kvG"/>
-                        <outlet property="myDetailedImageView" destination="lP7-eA-aSG" id="aMG-eK-gLF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GId-Bi-dYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-441" y="1688"/>
-        </scene>
         <!--My Navigation Controller-->
         <scene sceneID="mHd-Mu-0gP">
             <objects>
@@ -109,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6X-8Z-pAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1491" y="233"/>
+            <point key="canvasLocation" x="-1775" y="217"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="gNL-lF-5D6">
@@ -174,6 +84,15 @@
                                     <segue destination="vh3-aM-RWl" kind="modal" identifier="massageSeque" id="Sag-l0-GAL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-TC-fgI">
+                                <rect key="frame" x="137" y="524" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="42U-mP-tyg" kind="modal" identifier="saveitemseuq" id="K97-9w-HYc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -187,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keM-gz-Sne" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-985" y="217"/>
+            <point key="canvasLocation" x="-1353" y="217"/>
         </scene>
         <!--Items View Controller2-->
         <scene sceneID="NGH-UP-6jD">
@@ -253,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Uh-6D-MLh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-502.5" y="216.5"/>
+            <point key="canvasLocation" x="-882.5" y="228.5"/>
         </scene>
         <!--Detail View Controller2-->
         <scene sceneID="AYi-jY-xNo">
@@ -310,9 +229,6 @@
                                 <state key="normal" title="Save this">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="saveItemButton:" destination="tXA-Ko-xF8" eventType="touchUpInside" id="ygE-dW-Fro"/>
-                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="bottom" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMa-kq-09b">
                                 <rect key="frame" x="30" y="239" width="274" height="162"/>
@@ -351,9 +267,6 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="EEm-qS-I7W" kind="modal" identifier="testseq" id="fsZ-56-tqj"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-Da-qUt">
                                 <rect key="frame" x="24" y="44" width="272" height="143"/>
@@ -383,7 +296,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuH-6e-SqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-971" y="1812"/>
+            <point key="canvasLocation" x="-1847" y="1015"/>
+        </scene>
+        <!--Saved ItemVC-->
+        <scene sceneID="prt-9I-c0V">
+            <objects>
+                <viewController id="42U-mP-tyg" customClass="SavedItemVC" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5au-iT-7Jq"/>
+                        <viewControllerLayoutGuide type="bottom" id="CSu-cv-5yC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qt8-04-zZk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhT-CR-kcP">
+                                <rect key="frame" x="124" y="200" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Noa-OR-5Sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1282" y="854"/>
         </scene>
         <!--GoThereVC-->
         <scene sceneID="hzI-DW-TO6">
@@ -440,56 +379,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOM-HH-vcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1868" y="1708"/>
-        </scene>
-        <!--detailscrollview-->
-        <scene sceneID="uMJ-Ax-p1e">
-            <objects>
-                <viewController title="detailscrollview" id="VIJ-4b-zoB" customClass="DetailScrollVC" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CfQ-SZ-kA1"/>
-                        <viewControllerLayoutGuide type="bottom" id="YRC-oR-tCL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kYZ-BI-MH2" customClass="de">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bMP-KW-anp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2VH-Rb-Yi9">
-                                        <rect key="frame" x="80" y="188" width="160" height="284"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRM-Dm-El5">
-                                                <rect key="frame" x="-73" y="-242" width="276" height="617"/>
-                                                <string key="text">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
- 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="ScrollView" destination="bMP-KW-anp" id="vDK-7P-4ZO"/>
-                        <outlet property="contentView" destination="2VH-Rb-Yi9" id="Yvt-Un-xJE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ksV-Tj-w1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="243" y="1797"/>
         </scene>
         <!--More Photos-->
         <scene sceneID="CFd-co-poW">
@@ -583,7 +472,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M33-EB-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1193" y="2606"/>
+            <point key="canvasLocation" x="-1432" y="1833"/>
         </scene>
         <!--ViewController5-->
         <scene sceneID="TOl-YB-kVn">
@@ -623,7 +512,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qV0-Ye-xXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-539" y="2664"/>
+            <point key="canvasLocation" x="17" y="420"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

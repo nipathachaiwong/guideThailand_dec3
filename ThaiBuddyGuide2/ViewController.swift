@@ -54,8 +54,11 @@ class ViewController: UIViewController {
             var restaurantVC: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
             restaurantVC.jsonFileString = n
         }
-        
-        
+        if (segue.identifier == "saveitemseuq"){
+            var restaurantVC: SavedItemVC = segue.destinationViewController as SavedItemVC
+            
+        }
+      
     
 //   @IBAction func toggleSideMenu(sender: AnyObject) {
    //     toggleSideMenuView()

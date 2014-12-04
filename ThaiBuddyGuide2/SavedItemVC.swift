@@ -1,5 +1,5 @@
 //
-//  SavedItemViewController.swift
+//  SavedItemVC.swift
 //  ThaiBuddyGuide2
 //
 //  Created by Thai Buddy on 12/4/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SavedItemViewController: UIViewController {
+class SavedItemVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

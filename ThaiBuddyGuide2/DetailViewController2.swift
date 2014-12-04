@@ -98,7 +98,9 @@ class DetailViewController2: UIViewController{
 
     @IBAction func goTherebutton(sender: AnyObject) {
     }
+  
     
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
        var nextVC: MapViewController = segue.destinationViewController as MapViewController
         
@@ -130,11 +132,11 @@ class DetailViewController2: UIViewController{
             
         }
         
-        if (segue.identifier == "testseq"){
+        if (segue.identifier == "saveitemseque"){
             var ViewController5obj: UIViewController = segue.destinationViewController as UIViewController
             
             
-            
+           
                 
            
             
@@ -143,45 +145,22 @@ class DetailViewController2: UIViewController{
             
         }
         
-    }
-
-    @IBAction func saveItemButton(sender: AnyObject) {
-        
-        var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        
-        var itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
-        
-        var dataSet:NSMutableDictionary = NSMutableDictionary()
-        dataSet.setObject(itemString, forKey: "name")
-        dataSet.setObject(nameInThaiString, forKey: "nameInThai")
-        
-        
-  
-
-        
-        if (itemList){ // data already available
-            var newMutableList:NSMutableArray = NSMutableArray();
-            
-            for dict:AnyObject in itemList!{
-                newMutableList.addObject(dict as NSDictionary)
-            }
-            
-            userDefaults.removeObjectForKey("itemList")
-            newMutableList.addObject(dataSet)
-            userDefaults.setObject(newMutableList, forKey: "itemList")
+        if (segue.identifier == "saveitemseque"){
+            var SaveItemtableInstance: UIViewController = segue.destinationViewController as UIViewController
             
             
-        }else{ // This is the first todo item in the list
-            userDefaults.removeObjectForKey("itemList")
-            itemList = NSMutableArray()
-            itemList!.addObject(dataSet)
-            userDefaults.setObject(itemList, forKey: "itemList")
+           
+            
+            
+            
+            
+            
+            
         }
         
-        userDefaults.synchronize()
-        
-        self.navigationController.popToRootViewControllerAnimated(true)
     }
+
+
     /*
     // MARK: - Navigation
 
