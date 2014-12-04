@@ -84,8 +84,17 @@
                                     <segue destination="vh3-aM-RWl" kind="modal" identifier="massageSeque" id="Sag-l0-GAL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyP-d6-YXB">
+                                <rect key="frame" x="-11" y="524" width="161" height="30"/>
+                                <state key="normal" title="test save to arrat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveItemInfoButton:" destination="PV9-tc-XUh" eventType="touchUpInside" id="Sw2-5U-u1y"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-TC-fgI">
-                                <rect key="frame" x="137" y="524" width="46" height="30"/>
+                                <rect key="frame" x="203" y="530" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

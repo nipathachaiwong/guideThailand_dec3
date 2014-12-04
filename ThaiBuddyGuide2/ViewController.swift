@@ -16,6 +16,49 @@ class ViewController: UIViewController {
     var m =  "massage"
     var n = "nightlife"
     
+    //test save item info
+    @IBAction func saveItemInfoButton(sender: AnyObject) {
+        
+        let def = NSUserDefaults.standardUserDefaults()
+        /*
+        var key = "itemList"
+        
+        
+        
+        var array1: [NSString] = [NSString]()
+        
+        
+        
+        array1.append("value 1")
+        array1.append("value 2")
+
+        
+        
+        //save
+        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setObject(array1, forKey: key)
+        
+        defaults.synchronize()
+        
+println("savebutton clicked")
+*/
+        
+          var defaults = NSUserDefaults.standardUserDefaults()
+        
+        var dict : NSDictionary = ["key":"value","key2":"value2","key3":"value2",]
+        var array2: NSArray = dict.allValues // Create a dictionary and assign that to this array
+        
+        
+        defaults.setObject(array2,forKey : "key")
+        
+        var myarray : NSArray = def.objectForKey("key") as NSArray
+        println(myarray)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

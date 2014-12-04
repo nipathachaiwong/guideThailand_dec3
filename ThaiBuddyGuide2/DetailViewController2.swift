@@ -132,18 +132,7 @@ class DetailViewController2: UIViewController{
             
         }
         
-        if (segue.identifier == "saveitemseque"){
-            var ViewController5obj: UIViewController = segue.destinationViewController as UIViewController
-            
-            
-           
-                
-           
-            
-            
-            
-            
-        }
+   
         
         if (segue.identifier == "saveitemseque"){
             var SaveItemtableInstance: UIViewController = segue.destinationViewController as UIViewController
