@@ -105,25 +105,13 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         detailedViewController.longCord = item.long
         
         
-        self.presentViewController(detailedViewController, animated: true, completion: nil)
+       
         
         //println(item)
         //println(indexPath.row)
         
-        //test to saveditem array
-        self.arrayforSaveData.append(item)
-        // add the selected item to the array  test
-       
-        //self.SavedItemModelInstance.itemsSaveArray.append(item)
-        self.SavedItemModelInstance.itemsSaveArray.append(items[indexPath.row])
         
-        println(items[indexPath.row])
-        for name in self.arrayforSaveData {
-            
-            println(self.arrayforSaveData)
-            
-        }
-
+        //test
         //dictionary to save data to defaults
         var arrayAsDictionary:NSDictionary =
         [
@@ -136,18 +124,39 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
             "lat":item.lat,
             "long":item.long,
             "urlGetThereVid":item.urlGetThereVid,
-             "urlAtLocationVid":item.urlAtLocationVid,
+            "urlAtLocationVid":item.urlAtLocationVid,
             "descriptionstring":item.descriptiontext
             
         ]
+        //test to saveditem array
+        self.arrayforSaveData.append(item)
+        // add the selected item to the array  test
+       
+      
+        
+        println(items[indexPath.row])
+        for name in self.arrayforSaveData {
+            
+            println(self.arrayforSaveData)
+            
+            //nsuserdefaults
+            NSUserDefaults.standardUserDefaults().setObject(arrayAsDictionary, forKey: "savedItemTest")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
+            //print out data from nsuserdefaults
+            println("this is included")
+            println(NSUserDefaults.standardUserDefaults().dictionaryRepresentation())
+            
+            
+             self.presentViewController(detailedViewController, animated: true, completion: nil)
+            
+        }
+
+        
+      
         
         
-       NSUserDefaults.standardUserDefaults().setObject(arrayAsDictionary, forKey: "key")
-        NSUserDefaults.standardUserDefaults().synchronize()
-        
-        //print out data from nsuserdefaults
-        println("this is included")
-          println(NSUserDefaults.standardUserDefaults().dictionaryRepresentation())
+      
         
         //Note:
         //array1:NSDictionary = ["key1": "val1", "key2": "val2"]

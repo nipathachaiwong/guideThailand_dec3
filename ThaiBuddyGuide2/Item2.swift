@@ -16,6 +16,7 @@ class Item2: NSObject {
     var hours:String = ""
     var imageName:String = ""
     var descriptiontext:String = ""
+    var category:String = ""
     //these two cord need to be converted
     //code: var lat = (Wage.text as NSString).floatValue
     
