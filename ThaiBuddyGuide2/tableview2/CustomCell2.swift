@@ -29,6 +29,10 @@ class CustomCell2: UITableViewCell {
     {
        self.label.text = labelText
         self.myImageView.image = UIImage(named: imageName)
+        
+        //test code
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+
     }
 
 }

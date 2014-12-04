@@ -8,7 +8,6 @@
         <!--Items View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ViewController2" id="vXZ-lx-hvc" customClass="ItemsViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ygy-iR-OaZ"/>
@@ -59,6 +58,7 @@
                         <outlet property="myTableView" destination="oSq-yz-Cil" id="ZYd-tH-JWY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-965.5" y="965.5"/>
         </scene>
@@ -311,7 +311,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveItemButton:" destination="tXA-Ko-xF8" eventType="touchUpInside" id="h5J-Bj-PDN"/>
+                                    <action selector="saveItemButton:" destination="tXA-Ko-xF8" eventType="touchUpInside" id="ygE-dW-Fro"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="bottom" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMa-kq-09b">
