@@ -38,6 +38,8 @@ class DetailViewController2: UIViewController{
     var itemString: String?
     var myDetailedImageName: String?
     var desciptionDetail : String?
+   //added var
+    var hoursString : String?
     
     var phoneString: String?
     var nameInThaiString: String?

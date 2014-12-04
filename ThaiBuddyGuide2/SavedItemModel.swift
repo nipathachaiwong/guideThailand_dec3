@@ -14,16 +14,13 @@ class SavedItemModel: NSObject {
     
 
     
-        // Array of Items
-        var itemsSaveArray:[Item2] = [Item2]()
+ 
+    
+
             
     
     
-            
-            
-            
-            
-            
+    
             
     
         

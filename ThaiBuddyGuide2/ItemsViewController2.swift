@@ -18,6 +18,8 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     var SavedItemModelInstance:SavedItemModel = SavedItemModel()
     var arrayforSaveData:[Item2] = [Item2]()
     
+    //save as dict test
+
     
     @IBOutlet weak var myTableView: UITableView!
     let model:ItemModel = ItemModel()
@@ -27,8 +29,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
       //  self.getJsonFileName()
-       println(jsonFileString)
-        
+      
         self.setUpItems()
         
         self.myTableView.delegate = self
@@ -96,6 +97,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         detailedViewController.desciptionDetail = item.descriptiontext
         detailedViewController.nameInThaiString = item.nameInThai
         detailedViewController.phoneString = item.phone
+        detailedViewController.hoursString = item.hours
         detailedViewController.urlGetThereVidString = item.urlGetThereVid
         detailedViewController.urlAtLocationVidString = item.urlAtLocationVid
         
@@ -111,11 +113,44 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         //test to saveditem array
         self.arrayforSaveData.append(item)
         // add the selected item to the array  test
-        self.SavedItemModelInstance.itemsSaveArray.append(item)
+       
+        //self.SavedItemModelInstance.itemsSaveArray.append(item)
+        self.SavedItemModelInstance.itemsSaveArray.append(items[indexPath.row])
         
-        println(self.SavedItemModelInstance.itemsSaveArray)
+        println(items[indexPath.row])
+        for name in self.arrayforSaveData {
+            
+            println(self.arrayforSaveData)
+            
+        }
+
+        //dictionary to save data to defaults
+        var arrayAsDictionary:NSDictionary =
+        [
+            "name":item.name,
+            "nameInThai":item.nameInThai,
+            "phone":item.phone,
+            "hours":item.hours,
+            "imageName":item.imageName,
+            "category":item.category,
+            "lat":item.lat,
+            "long":item.long,
+            "urlGetThereVid":item.urlGetThereVid,
+             "urlAtLocationVid":item.urlAtLocationVid,
+            "descriptionstring":item.descriptiontext
+            
+        ]
         
-      
+        
+       NSUserDefaults.standardUserDefaults().setObject(arrayAsDictionary, forKey: "key")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        //print out data from nsuserdefaults
+        println("this is included")
+          println(NSUserDefaults.standardUserDefaults().dictionaryRepresentation())
+        
+        //Note:
+        //array1:NSDictionary = ["key1": "val1", "key2": "val2"]
     }
     // TO DO
     //   1. Arrayofitemslike saved to nsuserdefaults-

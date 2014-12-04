@@ -45,6 +45,9 @@ class ItemModel: NSObject {
             q.nameInThai = jsonDictionary["nameInThai"] as String
             q.phone = jsonDictionary["phone"] as String
             q.hours = jsonDictionary["hours"] as String
+            
+            //added 12 5 
+            q.category = jsonDictionary["category"] as String
            
             
             q.imageName = jsonDictionary["imageName"] as String
