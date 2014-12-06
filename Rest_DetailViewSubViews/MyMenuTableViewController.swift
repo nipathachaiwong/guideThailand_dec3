@@ -11,7 +11,7 @@ import UIKit
 class MyMenuTableViewController: UITableViewController {
     
     //hard coded sidebar menu items array 
-    var sideBarMenuArray: [String] = ["We", "Heart", "Swift"]
+    var sideBarMenuArray: [String] = ["Home", "Travel Tips", "Safety","Shopping Tips","Beware Scams!", "Useful Phrases", "Ask Me", "FeedBack","Restore Purchase"]
     
     var selectedMenuItem : Int = 0
     override func viewDidLoad() {
