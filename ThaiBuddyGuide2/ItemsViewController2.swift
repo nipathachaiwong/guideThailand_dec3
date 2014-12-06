@@ -16,7 +16,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     
    //test arrayto save data
     var SavedItemModelInstance:SavedItemModel = SavedItemModel()
-    var arrayforSaveData:[Item2] = [Item2]()
+    
     
     //save as dict test
 
@@ -127,10 +127,24 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
             "urlAtLocationVid":item.urlAtLocationVid,
             "descriptionstring":item.descriptiontext
             
+          
         ]
        
-       
-      
+        
+        var arrayforSaveData:[Item2] = [Item2]()
+        arrayforSaveData.append(item)
+       // var arrayOfItemsDictionary:NSMutableDictionary = [arrayforSaveData]
+        println("contents of item added to array")
+        
+        NSUserDefaults.standardUserDefaults().setObject(arrayforSaveData, forKey: "array")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+    
+        //  item +=  arrayAsDictionary
+        println(arrayforSaveData)
+        
+        
+
         
        
       
@@ -141,10 +155,20 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
             
             //print out data from nsuserdefaults
             println("this is included")
-            println(NSUserDefaults.standardUserDefaults().dictionaryRepresentation())
+          
+            //read
+        var defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        if (defaults.dictionaryForKey("savedItemTest") != nil) {
+            var dictionaryFromDefaults : NSDictionary = defaults.dictionaryForKey("savedItemTest")!
+            arrayAsDictionary = dictionaryFromDefaults as Dictionary
+             println("value of array")
             
             
-             self.presentViewController(detailedViewController, animated: true, completion: nil)
+            var array : NSDictionary = defaults.dictionaryForKey("array")!
+            println(arrayAsDictionary )
+           
+            println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+             
             
         
 
@@ -165,3 +189,4 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
 }
 
 
+}

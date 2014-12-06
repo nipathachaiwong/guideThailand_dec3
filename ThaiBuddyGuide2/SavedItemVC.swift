@@ -10,9 +10,15 @@ import UIKit
 
 class SavedItemVC: UIViewController {
 
+    
+    let model:SavedItemModel = SavedItemModel()
+    let modeltest:ItemModel = ItemModel()
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.model.getItems()
+        //self.modeltest.getItems()
 
         // Do any additional setup after loading the view.
     }

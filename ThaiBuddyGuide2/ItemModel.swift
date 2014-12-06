@@ -10,6 +10,9 @@ import UIKit
 
 class ItemModel: NSObject {
    
+        
+    
+    
     //get json url
     //let GetJsonUrlInstance:GetJsonUrl = GetJsonUrl()
     
@@ -29,6 +32,9 @@ class ItemModel: NSObject {
         
         //locale
          let jsonObjects:[NSDictionary] = self.getLocalJsonFile()
+        
+        //test
+       // println(jsonObjects)
         
         // Loop through each dictionary and assign values to our question objs
         var index:Int

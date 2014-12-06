@@ -181,10 +181,9 @@
 			children = (
 				B4D2CDFD1A2009F000B02E7E /* Main.storyboard */,
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
-				B49F22CF1A30D5F100781F92 /* SavedItemModel.swift */,
 				B49F22C51A30880E00781F92 /* SavedItemVC.swift */,
+				B49F22CF1A30D5F100781F92 /* SavedItemModel.swift */,
 				B40362EF1A2E1C13001F4232 /* Global Class Group */,
-				B4C7191B1A2E6B150041307A /* JsonFiles */,
 				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
 				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
@@ -195,6 +194,7 @@
 		B446AE021A1A8B2E007F3CD7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4C7191B1A2E6B150041307A /* JsonFiles */,
 				B4C3A0DC1A2298CC00A96225 /* moreVCimages */,
 				B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */,
 				B4D1F8281A23AE6000D5B3B4 /* test.MOV */,

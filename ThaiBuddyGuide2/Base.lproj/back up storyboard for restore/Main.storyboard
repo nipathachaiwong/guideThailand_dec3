@@ -120,7 +120,7 @@
         <!--Items View Controller2-->
         <scene sceneID="NGH-UP-6jD">
             <objects>
-                <viewController storyboardIdentifier="ViewController3" id="vh3-aM-RWl" customClass="ItemsViewController2" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vh3-aM-RWl" customClass="ItemsViewController2" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mfI-QM-ycs"/>
                         <viewControllerLayoutGuide type="bottom" id="2Mb-Jp-bZ6"/>
@@ -331,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Noa-OR-5Sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282" y="854"/>
+            <point key="canvasLocation" x="-1090" y="1078"/>
         </scene>
         <!--GoThereVC-->
         <scene sceneID="hzI-DW-TO6">
@@ -483,10 +483,10 @@
             </objects>
             <point key="canvasLocation" x="-1432" y="1833"/>
         </scene>
-        <!--ViewController5-->
+        <!--ViewController 4-->
         <scene sceneID="TOl-YB-kVn">
             <objects>
-                <viewController storyboardIdentifier="ViewController5" title="ViewController5" id="EEm-qS-I7W" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController5" title="ViewController 4" id="EEm-qS-I7W" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wlr-Jr-eIs"/>
                         <viewControllerLayoutGuide type="bottom" id="0II-XZ-KeY"/>
@@ -501,16 +501,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9G-lU-LgK">
-                                <rect key="frame" x="139" y="313" width="43" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9G-lU-LgK">
+                                <rect key="frame" x="16" y="28" width="43" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Push">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.2267350789" green="0.82260784629999995" blue="0.83163265310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="y27-ve-pZ8" secondAttribute="centerY" id="991-Xv-I0p"/>
                             <constraint firstAttribute="centerX" secondItem="q9G-lU-LgK" secondAttribute="centerX" id="alz-Tw-4RU"/>
@@ -521,7 +521,87 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qV0-Ye-xXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17" y="420"/>
+            <point key="canvasLocation" x="203" y="574"/>
+        </scene>
+        <!--ViewController 3-->
+        <scene sceneID="F1F-F6-bGi">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" title="ViewController 3" id="uhL-dw-eF0" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sH0-aj-OZP"/>
+                        <viewControllerLayoutGuide type="bottom" id="SCh-nh-gI5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ra-4j-YBL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQT-9e-ANR">
+                                <rect key="frame" x="97" y="274" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33c-S0-HC8">
+                                <rect key="frame" x="16" y="28" width="43" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="zQT-9e-ANR" secondAttribute="centerX" id="9rI-L3-8yi"/>
+                            <constraint firstAttribute="centerY" secondItem="zQT-9e-ANR" secondAttribute="centerY" id="aBd-aJ-aFR"/>
+                            <constraint firstItem="33c-S0-HC8" firstAttribute="top" secondItem="zQT-9e-ANR" secondAttribute="bottom" constant="18" id="gq5-v2-RR0"/>
+                            <constraint firstAttribute="centerX" secondItem="33c-S0-HC8" secondAttribute="centerX" id="hqE-C9-dtq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5y-AY-Km3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-173" y="594"/>
+        </scene>
+        <!--ViewController 2-->
+        <scene sceneID="oHh-Fw-Ozp">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" title="ViewController 2" id="uFR-1D-pjf" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w7A-1F-OlQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="UYV-e9-MkB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eCu-dn-To2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0t-k4-lel">
+                                <rect key="frame" x="97" y="274" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHS-Mh-SEl">
+                                <rect key="frame" x="16" y="28" width="43" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lHS-Mh-SEl" secondAttribute="centerX" id="3QX-Bl-BQX"/>
+                            <constraint firstItem="lHS-Mh-SEl" firstAttribute="top" secondItem="B0t-k4-lel" secondAttribute="bottom" constant="18" id="RTf-M3-fT7"/>
+                            <constraint firstAttribute="centerX" secondItem="B0t-k4-lel" secondAttribute="centerX" id="adH-pp-oBH"/>
+                            <constraint firstAttribute="centerY" secondItem="B0t-k4-lel" secondAttribute="centerY" id="yEP-5k-c2U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6l-Wm-pI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="-76"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

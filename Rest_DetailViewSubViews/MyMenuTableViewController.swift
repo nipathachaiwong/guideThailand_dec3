@@ -9,6 +9,10 @@
 import UIKit
 
 class MyMenuTableViewController: UITableViewController {
+    
+    //hard coded sidebar menu items array 
+    var sideBarMenuArray: [String] = ["We", "Heart", "Swift"]
+    
     var selectedMenuItem : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +46,7 @@ class MyMenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 4
+         return self.sideBarMenuArray.count;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -59,7 +63,12 @@ class MyMenuTableViewController: UITableViewController {
         }
         
         
-        cell!.textLabel?.text = "View #\(indexPath.row+1)"
+        //cell!.textLabel?.text = "View #\(indexPath.row+1)"
+        
+        // new code
+      cell!.textLabel?.text = self.sideBarMenuArray[indexPath.row]
+        
+      
         
         return cell!
     }

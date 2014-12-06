@@ -11,22 +11,38 @@ import UIKit
 class SavedItemModel: NSObject {
     
   
+    //var dictionary = Dictionary<String, AnyObject>()
+    var dictionary: NSDictionary = NSDictionary()
     
+    //func getItems() -> [Item2] {
     
-    func getItems() -> [Item2] {
+    func getItems()  {
         
         // Array of question objects
         var items:[Item2] = [Item2]()
         
-        
+        //test load defaults
+        var defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        if (defaults.dictionaryForKey("savedItemTest") != nil) {
+            var dictionaryFromDefaults : NSDictionary = defaults.dictionaryForKey("savedItemTest")!
+           self.dictionary = dictionaryFromDefaults as Dictionary
+            println(dictionary)
+            println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+        }
+    
         
         // Get Json array of dictionaries
         //remote code below currenrlt commented out
-        
+        //let dictionary = ["myKey" : NSNumber(int: 12)] as NSDictionary
+                //NSUserDefaults.standardUserDefaults().dictionaryForKey("myDict")
         // let jsonObjects:[NSDictionary] = self.getRemoteJsonFile()
         
         //locale
-        let jsonObjects:[NSDictionary] = self.getLocalJsonFile()
+        
+        
+        /*
+        
+        let jsonObjects:[NSDictionary] = dictionary[index]
         
         // Loop through each dictionary and assign values to our question objs
         var index:Int
@@ -73,7 +89,7 @@ class SavedItemModel: NSObject {
         
         // Return list of question objects
         return items
-        
+        */
         
     }
     
