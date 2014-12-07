@@ -10,13 +10,6 @@ import UIKit
 
 class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
-    
-    //test
-    var toDoItems:NSMutableArray = NSMutableArray();
-    
-    //required init(coder aDecoder: NSCoder!) {
-      //  super.init(coder: aDecoder)
-   // }
     //get json fileNMW
     //var jsonFileString = "restaurants"
     var jsonFileString: String = ""
@@ -120,9 +113,6 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         
         //test
         //dictionary to save data to defaults
-        
-       /*  working code but only create one item in array
-
         var arrayAsDictionary:NSDictionary =
         [
             "name":item.name,
@@ -158,66 +148,37 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         
        
       
-     
+            
+            //nsuserdefaults
+            NSUserDefaults.standardUserDefaults().setObject(arrayAsDictionary, forKey: "savedItemTest")
+            NSUserDefaults.standardUserDefaults().synchronize()
             
             //print out data from nsuserdefaults
             println("this is included")
           
             //read
-  
+        var defaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        if (defaults.dictionaryForKey("savedItemTest") != nil) {
+            var dictionaryFromDefaults : NSDictionary = defaults.dictionaryForKey("savedItemTest")!
+            arrayAsDictionary = dictionaryFromDefaults as Dictionary
+             println("value of array")
+            
+            
+            var array : NSDictionary = defaults.dictionaryForKey("array")!
+            println(arrayAsDictionary )
            
             println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
-           
-        
-        
-        */
+             
             
-        //test 12 7
+        
 
-            var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-            
-            var itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
-            
-            var dataSet:NSMutableDictionary = NSMutableDictionary()
-            dataSet.setObject("test1", forKey: "itemTitle")
-            dataSet.setObject("test2", forKey: "itemNote")
-            
-            if (itemList) != nil { // data already available
-                var newMutableList:NSMutableArray = NSMutableArray();
-                
-                for dict:AnyObject in itemList!{
-                   newMutableList.addObject(dict as NSDictionary)
-                 
-                }
-                
-                userDefaults.removeObjectForKey("itemList")
-                newMutableList.addObject(dataSet)
-                userDefaults.setObject(newMutableList, forKey: "itemList")
-                
-                
-            }else{ // This is the first todo item in the list
-                userDefaults.removeObjectForKey("itemList")
-                itemList = NSMutableArray()
-                itemList!.addObject(dataSet)
-                userDefaults.setObject(itemList, forKey: "itemList")
-            }
-            
-            userDefaults.synchronize()
         
-            //print out data from nsuserdefaults
-            println("this test")
-            
-            //read
-          
-            
-            var itemListFromUserDefaults:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
-            
-            if (itemListFromUserDefaults) != nil {
-                toDoItems = itemListFromUserDefaults!
-                
-            }
-            
-             println(toDoItems )        //Note:
+      
+        
+        
+      
+        
+        //Note:
         //array1:NSDictionary = ["key1": "val1", "key2": "val2"]
     }
     // TO DO
@@ -228,3 +189,4 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
 }
 
 
+}

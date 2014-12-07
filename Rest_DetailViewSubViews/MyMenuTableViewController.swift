@@ -101,25 +101,9 @@ class MyMenuTableViewController: UITableViewController {
         case 2:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as UIViewController
             break
-        case 3:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as UIViewController
-            break
-        case 4:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5") as UIViewController
-            break
-        case 5:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController6") as UIViewController
-            break
-        case 6:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController7") as UIViewController
-            break
-        case 7:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController8") as UIViewController
-            break
-            
-            
+       
         default:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController9") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as UIViewController
             break
         }
         

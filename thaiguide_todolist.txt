@@ -53,7 +53,6 @@ home page buttons for main vc template
 look here : http://stackoverflow.com/questions/24112627/initialising-empty-arrays-of-dictionaries-in-swift
 
 12/7 sidebar menu detailviews ( content views)
-
 -safety tips
 
 -avoid common scams
