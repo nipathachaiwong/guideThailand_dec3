@@ -46,7 +46,7 @@ class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDele
     
     func setUpItems()
     {
-      self.model.JsonfileName = self.jsonFileString
+      self.model.JsonfileNameFromSideMenu = self.jsonFileString
       self.items = self.model.getItems()
         
     }

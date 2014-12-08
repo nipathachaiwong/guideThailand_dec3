@@ -127,7 +127,7 @@ class ItemSideMenuModel: NSObject {
         // let appBundlePath:String? = NSBundle.mainBundle().pathForResource("Item2Data", ofType: "json")
        // let appBundlePath:String? = NSBundle.mainBundle().pathForResource(GetJsonUrlInstance.JsonFileName, ofType: "json")
         
-        let appBundlePath:String? = NSBundle.mainBundle().pathForResource(JsonfileName, ofType: "json")
+        let appBundlePath:String? = NSBundle.mainBundle().pathForResource(JsonfileNameFromSideMenu, ofType: "json")
         
         // Use optional binding to check if path exists
         if let actualBundlePath = appBundlePath {
