@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     //get json fileNMW
     //var jsonFileString = "restaurants"
@@ -22,8 +22,8 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
 
     
     @IBOutlet weak var myTableView: UITableView!
-    let model:ItemModel = ItemModel()
-    var items:[Item2] = [Item2]()
+    let model:ItemSideMenuModel = ItemSideMenuModel()
+    var items:[ItemSideMenu] = [ItemSideMenu]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +65,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell: CustomCell2 = tableView.dequeueReusableCellWithIdentifier("cell2") as CustomCell2
+        let cell: CellForSideTableVC = tableView.dequeueReusableCellWithIdentifier("SideMenuTableCell") as CellForSideTableVC
         
         if indexPath.row % 2 == 0
         {

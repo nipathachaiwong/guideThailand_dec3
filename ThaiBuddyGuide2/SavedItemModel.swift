@@ -29,8 +29,8 @@ class SavedItemModel: NSObject {
             println(dictionary)
             println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
         }
-    
         
+       
         // Get Json array of dictionaries
         //remote code below currenrlt commented out
         //let dictionary = ["myKey" : NSNumber(int: 12)] as NSDictionary

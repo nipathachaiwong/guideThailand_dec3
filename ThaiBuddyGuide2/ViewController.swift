@@ -10,6 +10,51 @@ import UIKit
 
 class ViewController: UIViewController {
     
+ 
+    
+    @IBAction func saveButton(sender: AnyObject) {
+        
+        var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        var itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
+        
+        var dataSet:NSMutableDictionary = NSMutableDictionary()
+        dataSet.setObject("i3", forKey: "itemTitel")
+        dataSet.setObject("3", forKey: "itemNote")
+      //  NSUserDefaults.standardUserDefaults().setObject(dataSet, forKey: "savedItemTest")
+        
+      /*  if (itemList) != nil { // data already available
+            var newMutableList:NSMutableArray = NSMutableArray();
+            
+            for dict:AnyObject in itemList!{
+                newMutableList.addObject(dict as NSDictionary)
+            }
+            
+            userDefaults.removeObjectForKey("itemList")
+            newMutableList.addObject(dataSet)
+            userDefaults.setObject(newMutableList, forKey: "itemList")
+            
+            
+        }else{ // This is the first todo item in the list
+            userDefaults.removeObjectForKey("itemList")
+            itemList = NSMutableArray()
+            itemList!.addObject(dataSet)
+            userDefaults.setObject(itemList, forKey: "itemList")
+        }
+        
+        userDefaults.synchronize()
+        
+        //read
+        */
+        
+      
+        
+      //  println(itemListFromUserDefaults)
+        
+        
+    }
+    
+    
     var r = "restaurants"
     var s = "slights"
     var shop = "shopping"
@@ -18,28 +63,7 @@ class ViewController: UIViewController {
     //test
    //  var saveItemObj:SavedItemModel = SavedItemModel()
     //test save item info
-    @IBAction func saveItemInfoButton(sender: AnyObject) {
-       //working code
-        /*
-        let def = NSUserDefaults.standardUserDefaults()
 
-        
-          var defaults = NSUserDefaults.standardUserDefaults()
-        
-        var dict : NSDictionary = ["key":"value","key2":"value2","key3":"value2",]
-        var array2: NSArray = dict.allValues // Create a dictionary and assign that to this array
-        
-        
-        defaults.setObject(array2,forKey : "key")
-        
-        var myarray : NSArray = def.objectForKey("key") as NSArray
-        println(myarray)
-*/
-  //      self.saveItemObj.saveItemToDefaults()
-       
-
-     
-    }
     
     
     override func viewDidLoad() {
@@ -85,7 +109,7 @@ class ViewController: UIViewController {
             
         }
       
-    
+       
 //   @IBAction func toggleSideMenu(sender: AnyObject) {
    //     toggleSideMenuView()
    // }

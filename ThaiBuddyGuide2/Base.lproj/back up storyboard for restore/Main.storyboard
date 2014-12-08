@@ -90,7 +90,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveItemInfoButton:" destination="PV9-tc-XUh" eventType="touchUpInside" id="Sw2-5U-u1y"/>
+                                    <action selector="saveButton:" destination="PV9-tc-XUh" eventType="touchUpInside" id="MVD-GA-wbU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-TC-fgI">
@@ -181,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Uh-6D-MLh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-882.5" y="228.5"/>
+            <point key="canvasLocation" x="-910.5" y="186.5"/>
         </scene>
         <!--Detail View Controller2-->
         <scene sceneID="AYi-jY-xNo">
@@ -510,7 +510,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="y27-ve-pZ8" secondAttribute="centerY" id="991-Xv-I0p"/>
                             <constraint firstAttribute="centerX" secondItem="q9G-lU-LgK" secondAttribute="centerX" id="alz-Tw-4RU"/>
@@ -550,7 +550,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="zQT-9e-ANR" secondAttribute="centerX" id="9rI-L3-8yi"/>
                             <constraint firstAttribute="centerY" secondItem="zQT-9e-ANR" secondAttribute="centerY" id="aBd-aJ-aFR"/>
@@ -590,7 +590,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="lHS-Mh-SEl" secondAttribute="centerX" id="3QX-Bl-BQX"/>
                             <constraint firstItem="lHS-Mh-SEl" firstAttribute="top" secondItem="B0t-k4-lel" secondAttribute="bottom" constant="18" id="RTf-M3-fT7"/>
@@ -602,6 +602,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6l-Wm-pI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="203" y="-76"/>
+        </scene>
+        <!--SideMenuTableViewVC-->
+        <scene sceneID="Cnk-6t-KJ9">
+            <objects>
+                <viewController title="SideMenuTableViewVC" id="EY9-uz-wWz" customClass="SideMenuTableView" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u6c-yI-oau"/>
+                        <viewControllerLayoutGuide type="bottom" id="58H-Qp-aoK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rug-vn-9lt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GIQ-No-S0l">
+                                <rect key="frame" x="0.0" y="115" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="SideMenuTableCell" id="dxr-1b-y2l" customClass="CustomCell2" customModule="ThaiBuddyGuide2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxr-1b-y2l" id="P1A-kh-ewh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-ca-ZI1">
+                                                    <rect key="frame" x="24" y="5" width="193" height="54"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yp0-nw-Hgs">
+                                                    <rect key="frame" x="202" y="7" width="110" height="60"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="aaw-ca-ZI1" id="44s-Tm-XpN"/>
+                                            <outlet property="myImageView" destination="yp0-nw-Hgs" id="vfE-3f-2m6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EY9-uz-wWz" id="qYq-aR-Mv4"/>
+                                    <outlet property="delegate" destination="EY9-uz-wWz" id="v3C-ZV-JqL"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoc-L9-yd0">
+                                <rect key="frame" x="164" y="28" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="EY9-uz-wWz" eventType="touchUpInside" id="JIN-FD-qZT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myTableView" destination="GIQ-No-S0l" id="Sqm-no-Ec4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95W-UO-OTg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654.5" y="978.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
