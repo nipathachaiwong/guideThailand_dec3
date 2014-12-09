@@ -102,18 +102,20 @@ class MyMenuTableViewController: UITableViewController {
         case 1:
            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
          detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
-
+         detailedViewController.jsonFileString = "Item2Data"
          
          //println("got here to this line")
             
             
             break
         case 2:
-            detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as ItemsViewController
+            detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
+            detailedViewController.jsonFileString = "3data"
             break
        
         default:
-              detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as ItemsViewController
+            detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
+            detailedViewController.jsonFileString = "Item2Data"
               
             break
         }

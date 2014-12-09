@@ -12,6 +12,8 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
     
     @IBOutlet weak var myTableView: UITableView!
     
+    var jsonFileString: String = ""
+    
     
    var items:[Item2] = [Item2]()
     let model:SideItemModel = SideItemModel()
@@ -32,7 +34,7 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
     
     func setUpItems()
     {
-        
+        self.model.JsonfileName = self.jsonFileString
         self.items = self.model.getItems()
         
     }

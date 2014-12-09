@@ -11,7 +11,9 @@ import UIKit
 class SideItemModel: NSObject {
    
     //get json url
-    let GetJsonUrlInstance:GetJsonUrl = GetJsonUrl()
+    
+    
+        var JsonfileName: String = ""
     
     func getItems() -> [Item2] {
         
@@ -77,42 +79,13 @@ class SideItemModel: NSObject {
        
     }
     
-    func getRemoteJsonFile() -> [NSDictionary] {
         
-        // Create a new URL
-       // let remoteUrl:NSURL? = NSURL(string: "https://dl.dropboxusercontent.com/u/196547970/QuestionDat.json")
-        
-        let remoteUrl:NSURL? = NSURL(string: GetJsonUrlInstance.JsonUrl)
-              
-        // Check if it's nil
-        if let actualRemoteUrl = remoteUrl {
-            
-            // Try to get the data
-            let fileData:NSData? = NSData(contentsOfURL: actualRemoteUrl)
-            
-            // Check if it's nil
-            if let actualFileData = fileData {
-                
-                // Parse out the dictionaries
-                let arrayOfDictionaries:[NSDictionary]? = NSJSONSerialization.JSONObjectWithData(actualFileData, options: NSJSONReadingOptions.MutableContainers, error: nil) as [NSDictionary]?
-                
-                if let actualArrayOfDictionaries = arrayOfDictionaries {
-                    
-                    // Successfully parsed out array of dictionaries
-                    return actualArrayOfDictionaries
-                }
-            }
-            
-        }
-        return [NSDictionary]()
-    }
-    
     func getLocalJsonFile() -> [NSDictionary] {
         
         // Get an NSURL obj pointing to the json file in our app bundle
        
         // let appBundlePath:String? = NSBundle.mainBundle().pathForResource("Item2Data", ofType: "json")
-        let appBundlePath:String? = NSBundle.mainBundle().pathForResource(GetJsonUrlInstance.JsonFileName, ofType: "json")
+        let appBundlePath:String? = NSBundle.mainBundle().pathForResource(JsonfileName, ofType: "json")
         
         // Use optional binding to check if path exists
         if let actualBundlePath = appBundlePath {
