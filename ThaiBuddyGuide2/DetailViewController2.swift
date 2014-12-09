@@ -26,6 +26,9 @@ class DetailViewController2: UIViewController{
     //scrollview
     @IBOutlet weak var scrollView: UIScrollView!
     
+    //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var modelSide:SideBarDataModel = SideBarDataModel()
 
     @IBAction func backButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true,completion: nil)
@@ -53,8 +56,8 @@ class DetailViewController2: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-         var sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: MyMenuTableViewController(), menuPosition:.Left)
+               sideBar = SideBar(sourceView: self.view, menuItems: self.modelSide.data)
+       
      
     
         

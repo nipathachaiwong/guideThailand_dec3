@@ -10,26 +10,25 @@ import UIKit
 
 class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
-    //get json fileNMW
-    //var jsonFileString = "restaurants"
+ 
     var jsonFileString: String = ""
     
-   //test arrayto save data
-   // var SavedItemModelInstance:SavedItemModel = SavedItemModel()
-    
-    
-    //save as dict test
+  
 
     
     @IBOutlet weak var myTableView: UITableView!
     let model:ItemModel = ItemModel()
     var items:[Item2] = [Item2]()
     
+    //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var modelSide:SideBarDataModel = SideBarDataModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-      //  self.getJsonFileName()
       
+        sideBar = SideBar(sourceView: self.view, menuItems: self.modelSide.data)
+        
         self.setUpItems()
         
         self.myTableView.delegate = self
