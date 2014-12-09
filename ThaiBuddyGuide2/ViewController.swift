@@ -21,6 +21,11 @@ class ViewController: UIViewController{
     //}
     
 
+    @IBAction func showSideBarButton(sender: AnyObject) {
+        
+      
+        self.sideBar.showSideBar(true)
+    }
     
     
     var r = "restaurants"
