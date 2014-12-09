@@ -45,6 +45,8 @@ class SideDetailViewController: UIViewController{
     var myDetailedImageName: String?
     var desciptionDetail : String?
     
+     var hoursString : String?
+    
     var phoneString: String?
     var nameInThaiString: String?
     

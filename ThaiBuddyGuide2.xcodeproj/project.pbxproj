@@ -215,9 +215,9 @@
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 				B4DE99B91A36B7BD001EECC0 /* SavedItemVC.swift */,
 				B4DE99BB1A36B7CB001EECC0 /* SavedItemModel.swift */,
-				B441D32A1A37609E00F14EE3 /* NewSideBar */,
 				B40362EF1A2E1C13001F4232 /* Global Class Group */,
 				B4CF35001A35359C00AEF3DA /* SideMenuTableViews */,
+				B441D32A1A37609E00F14EE3 /* NewSideBar */,
 				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
 			);

@@ -10,6 +10,11 @@ import UIKit
 
 class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
+    //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var modelSide:SideBarDataModel = SideBarDataModel()
+    
+    
     @IBOutlet weak var myTableView: UITableView!
     
     var jsonFileString: String = ""
@@ -39,7 +44,7 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       //test
+       sideBar = SideBar(sourceView: self.view, menuItems: self.modelSide.data)
         
         
         self.setUpItems()
@@ -93,6 +98,51 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
         
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = items[indexPath.row]
+        
+        var detailedViewController: SideDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("SideDetailViewController") as SideDetailViewController
+        
+        
+        detailedViewController.itemString = item.name
+        detailedViewController.myDetailedImageName = item.imageName
+        detailedViewController.desciptionDetail = item.descriptiontext
+        detailedViewController.nameInThaiString = item.nameInThai
+        detailedViewController.phoneString = item.phone
+        detailedViewController.hoursString = item.hours
+        detailedViewController.urlGetThereVidString = item.urlGetThereVid
+        detailedViewController.urlAtLocationVidString = item.urlAtLocationVid
+        
+        detailedViewController.latCord = item.lat
+        detailedViewController.longCord = item.long
+        
+        
+        
+        var arrayAsDictionary:NSDictionary =
+        [
+            "name":item.name,
+            "nameInThai":item.nameInThai,
+            "phone":item.phone,
+            "hours":item.hours,
+            "imageName":item.imageName,
+            "category":item.category,
+            "lat":item.lat,
+            "long":item.long,
+            "urlGetThereVid":item.urlGetThereVid,
+            "urlAtLocationVid":item.urlAtLocationVid,
+            "descriptionstring":item.descriptiontext
+            
+            
+        ]
+        
+        
+        
+        self.presentViewController(detailedViewController, animated: true, completion: nil)
+        
+        
+        
+    }
+
     
 }
 
