@@ -11,6 +11,8 @@
 		B441D32C1A3761D100F14EE3 /* SideBarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441D32B1A3761D100F14EE3 /* SideBarDataModel.swift */; };
 		B441D32E1A3761D900F14EE3 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441D32D1A3761D900F14EE3 /* SideBarTableViewController.swift */; };
 		B441D3301A3761E000F14EE3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441D32F1A3761E000F14EE3 /* SideBar.swift */; };
+		B441D3931A37B70E00F14EE3 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = B441D3911A37B70E00F14EE3 /* burger.png */; };
+		B441D3941A37B70E00F14EE3 /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B441D3921A37B70E00F14EE3 /* burger@2x.png */; };
 		B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */; };
 		B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE061A1A8B2E007F3CD7 /* ViewController.swift */; };
 		B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */; };
@@ -83,6 +85,8 @@
 		B441D32B1A3761D100F14EE3 /* SideBarDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarDataModel.swift; sourceTree = "<group>"; };
 		B441D32D1A3761D900F14EE3 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 		B441D32F1A3761E000F14EE3 /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		B441D3911A37B70E00F14EE3 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
+		B441D3921A37B70E00F14EE3 /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
 		B446ADFF1A1A8B2E007F3CD7 /* ThaiBuddyGuide2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiBuddyGuide2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B446AE031A1A8B2E007F3CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				B441D32D1A3761D900F14EE3 /* SideBarTableViewController.swift */,
-				B441D32F1A3761E000F14EE3 /* SideBar.swift */,
 				B441D32B1A3761D100F14EE3 /* SideBarDataModel.swift */,
+				B441D32F1A3761E000F14EE3 /* SideBar.swift */,
 			);
 			name = NewSideBar;
 			sourceTree = "<group>";
@@ -233,6 +237,8 @@
 				B4D1F8281A23AE6000D5B3B4 /* test.MOV */,
 				B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */,
 				B446AE031A1A8B2E007F3CD7 /* Info.plist */,
+				B441D3911A37B70E00F14EE3 /* burger.png */,
+				B441D3921A37B70E00F14EE3 /* burger@2x.png */,
 				B4BC1DAC1A290D02008F0A7F /* test data */,
 			);
 			name = "Supporting Files";
@@ -429,8 +435,10 @@
 				B4C7191A1A2E60200041307A /* restaurants.json in Resources */,
 				B4BC1DBE1A291340008F0A7F /* first Place2@2x.jpg in Resources */,
 				B4C3A0E61A22990F00A96225 /* bild-04@2x.jpg in Resources */,
+				B441D3941A37B70E00F14EE3 /* burger@2x.png in Resources */,
 				B4BC1DBF1A291340008F0A7F /* first Place1@2x.jpg in Resources */,
 				B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */,
+				B441D3931A37B70E00F14EE3 /* burger.png in Resources */,
 				B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */,
 				B4C3A0E71A22990F00A96225 /* bild-05@2x.jpg in Resources */,
 				B4C719271A2E737B0041307A /* shopping.json in Resources */,

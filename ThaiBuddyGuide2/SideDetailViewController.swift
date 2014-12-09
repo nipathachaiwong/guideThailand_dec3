@@ -12,7 +12,9 @@ import UIKit
 
 class SideDetailViewController: UIViewController{
 
-    
+    //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var modelSide:SideBarDataModel = SideBarDataModel()
 
     @IBOutlet weak var navigationBar: UINavigationBar!
     
@@ -61,13 +63,7 @@ class SideDetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //side menu  ewewqewewwq
-        sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: MyMenuTableViewController(), menuPosition:.Left)
-        
-        // make navigation bar showing over side menu
-     //  view.bringSubviewToFront(navigationBar)
-        
-        //78475443
+    sideBar = SideBar(sourceView: self.view, menuItems: self.modelSide.data)
         
         
         self.itemLabel.text = itemString
@@ -84,13 +80,7 @@ class SideDetailViewController: UIViewController{
          scrollView.contentSize = CGSize(width: CGRectGetWidth(view.bounds), height: CGRectGetHeight(view.bounds) * 1.5)
         scrollView.bounces = false
         
-        println(itemString)
-        println(phoneString)
-        println(latCord)
-        println(longCord)
-        println("got here"+itemString!)
-        println(urlGetThereVidString)
-        println("in detailvc"+urlAtLocationVidString!)
+      
         
     }
 

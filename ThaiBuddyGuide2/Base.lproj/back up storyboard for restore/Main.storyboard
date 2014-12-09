@@ -109,7 +109,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Page" id="gw2-ox-Dcp">
-                        <barButtonItem key="leftBarButtonItem" title="Toggle" id="nwa-wz-cul">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="wK4-ku-30r">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B9o-lL-qZg">
+                                <rect key="frame" x="0.0" y="0.0" width="19" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="burger"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="nwa-wz-cul">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="PV9-tc-XUh" id="0UH-d9-VLI"/>
                             </connections>
@@ -557,24 +565,6 @@
             </objects>
             <point key="canvasLocation" x="-2025.5" y="591.5"/>
         </scene>
-        <!--Side Menu Navigation Controller-->
-        <scene sceneID="Qr8-v6-CVI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qsN-pM-V0y" customClass="ENSideMenuNavigationController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6x6-UO-bx3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tXA-Ko-xF8" kind="relationship" relationship="rootViewController" id="j5D-0X-8ey"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tqe-WV-1HP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-467" y="679"/>
-        </scene>
         <!--Side Detail View Controller-->
         <scene sceneID="WT0-jX-QJd">
             <objects>
@@ -694,6 +684,9 @@
             <point key="canvasLocation" x="65" y="679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="burger" width="63" height="111"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

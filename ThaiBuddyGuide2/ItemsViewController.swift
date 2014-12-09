@@ -118,22 +118,7 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
         
         
         
-        var arrayAsDictionary:NSDictionary =
-        [
-            "name":item.name,
-            "nameInThai":item.nameInThai,
-            "phone":item.phone,
-            "hours":item.hours,
-            "imageName":item.imageName,
-            "category":item.category,
-            "lat":item.lat,
-            "long":item.long,
-            "urlGetThereVid":item.urlGetThereVid,
-            "urlAtLocationVid":item.urlAtLocationVid,
-            "descriptionstring":item.descriptiontext
-            
-            
-        ]
+   
         
         
         

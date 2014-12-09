@@ -79,13 +79,13 @@ class SideBarTableViewController: UITableViewController {
         
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        var destViewController : UIViewController = UIViewController()
+        var homeViewController : ViewController = ViewController()
         var detailedViewController: ItemsViewController = ItemsViewController()
         
         switch (indexPath.row) {
         case 0:
-            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
+            homeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as ViewController
+           // self.presentViewController(homeViewController, animated: true, completion: nil)
             
             break
             
@@ -113,7 +113,7 @@ class SideBarTableViewController: UITableViewController {
         
         self.presentViewController(detailedViewController, animated: true, completion: nil)
         
-        self.presentViewController(destViewController, animated: true, completion: nil)
+      self.presentViewController(homeViewController, animated: true, completion: nil)
         
         //sideMenuController()?.setContentViewController(destViewController)
         //  sideMenuController()?.setContentViewController(detailedViewController)
