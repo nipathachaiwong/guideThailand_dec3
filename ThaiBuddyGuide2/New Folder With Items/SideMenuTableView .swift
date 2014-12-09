@@ -8,28 +8,13 @@
 
 import UIKit
 
-class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDelegate {
-    
-    //get json fileNMW
-    //var jsonFileString = "restaurants"
-    var jsonFileString: String = ""
-    
-   //test arrayto save data
-   // var SavedItemModelInstance:SavedItemModel = SavedItemModel()
-    
-    
-    //save as dict test
-
-    
-    @IBOutlet weak var myTableView: UITableView!
+class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDelegate {@IBOutlet weak var myTableView: UITableView!
     let model:ItemSideMenuModel = ItemSideMenuModel()
     var items:[ItemSideMenu] = [ItemSideMenu]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-      //  self.getJsonFileName()
-      
         self.setUpItems()
         
         self.myTableView.delegate = self
@@ -42,12 +27,10 @@ class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDele
         // Dispose of any resources that can be recreated.
     }
     
-
-    
     func setUpItems()
     {
-      self.model.JsonfileNameFromSideMenu = self.jsonFileString
-      self.items = self.model.getItems()
+        
+        self.items = self.model.getItems()
         
     }
     
@@ -61,11 +44,12 @@ class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDele
         return items.count
     }
     
-   
+    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell: CellForSideTableVC = tableView.dequeueReusableCellWithIdentifier("SideMenuTableCell") as CellForSideTableVC
+        let cell: CellForSideTableVC = tableView.dequeueReusableCellWithIdentifier("CELLSide") as CellForSideTableVC
         
         if indexPath.row % 2 == 0
         {
@@ -76,7 +60,7 @@ class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDele
             cell.backgroundColor = UIColor.orangeColor()
         }
         
-       let item = items[indexPath.row]
+        let item = items[indexPath.row]
         
         cell.setCell(item.name, imageName: item.imageName)
         
@@ -87,17 +71,16 @@ class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDele
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-       let item = items[indexPath.row]
+        let item = items[indexPath.row]
         
         var detailedViewController: DetailViewController2 = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController2") as DetailViewController2
         
-            
+        
         detailedViewController.itemString = item.name
         detailedViewController.myDetailedImageName = item.imageName
         detailedViewController.desciptionDetail = item.descriptiontext
         detailedViewController.nameInThaiString = item.nameInThai
         detailedViewController.phoneString = item.phone
-        detailedViewController.hoursString = item.hours
         detailedViewController.urlGetThereVidString = item.urlGetThereVid
         detailedViewController.urlAtLocationVidString = item.urlAtLocationVid
         
@@ -105,32 +88,11 @@ class SideMenuTableView: UIViewController, UITableViewDataSource,UITableViewDele
         detailedViewController.longCord = item.long
         
         
-       
-        var arrayAsDictionary:NSDictionary =
-        [
-            "name":item.name,
-            "nameInThai":item.nameInThai,
-            "phone":item.phone,
-            "hours":item.hours,
-            "imageName":item.imageName,
-            "category":item.category,
-            "lat":item.lat,
-            "long":item.long,
-            "urlGetThereVid":item.urlGetThereVid,
-            "urlAtLocationVid":item.urlAtLocationVid,
-            "descriptionstring":item.descriptiontext
-            
-            
-        ]
-    
-        
-        
-          self.presentViewController(detailedViewController, animated: true, completion: nil)
-        
-      
+        self.presentViewController(detailedViewController, animated: true, completion: nil)
         
     }
-   
+    // TO DO
+    //   1. Arrayofitemslike saved to nsuserdefaults-
 
     
 }

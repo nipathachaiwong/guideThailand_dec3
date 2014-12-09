@@ -9,16 +9,8 @@
 import UIKit
 
 class ItemSideMenuModel: NSObject {
-   
-        
-    
-    
     //get json url
-    //let GetJsonUrlInstance:GetJsonUrl = GetJsonUrl()
-    
-    
-    //from sidemenu
-    var JsonfileNameFromSideMenu: String = ""
+    let GetJsonUrlInstance:GetJsonUrl = GetJsonUrl()
     
     func getItems() -> [ItemSideMenu] {
         
@@ -30,13 +22,10 @@ class ItemSideMenuModel: NSObject {
         // Get Json array of dictionaries
         //remote code below currenrlt commented out
         
-       // let jsonObjects:[NSDictionary] = self.getRemoteJsonFile()
+        // let jsonObjects:[NSDictionary] = self.getRemoteJsonFile()
         
         //locale
-         let jsonObjects:[NSDictionary] = self.getLocalJsonFile()
-        
-        //test
-       // println(jsonObjects)
+        let jsonObjects:[NSDictionary] = self.getLocalJsonFile()
         
         // Loop through each dictionary and assign values to our question objs
         var index:Int
@@ -54,48 +43,46 @@ class ItemSideMenuModel: NSObject {
             q.phone = jsonDictionary["phone"] as String
             q.hours = jsonDictionary["hours"] as String
             
-           /*
-            //added 12 5
-            q.category = jsonDictionary["category"] as String
-           
             
             q.imageName = jsonDictionary["imageName"] as String
             q.descriptiontext = jsonDictionary["descriptionstring"] as String
-           
+            
             q.lat = jsonDictionary["lat"] as Double
             q.long = jsonDictionary["long"] as Double
             
-             q.urlGetThereVid = jsonDictionary["urlGetThereVid"] as String
-             q.urlAtLocationVid = jsonDictionary["urlAtLocationVid"] as String
+            q.urlGetThereVid = jsonDictionary["urlGetThereVid"] as String
+            q.urlAtLocationVid = jsonDictionary["urlAtLocationVid"] as String
             
             q.morePhotosArray = jsonDictionary["moreImages"] as [String]
             
             
-            */
-        
+            
+            
             
             
             // Add the question to the question array
-        items.append(q)
+            items.append(q)
         }
         
-    
-    
+        for element in items {
+            println(element)
+        }
         
-        // Return list of question objects        
+        
+        
+        // Return list of question objects
         return items
         
-       
+        
     }
     
-   /*
     func getRemoteJsonFile() -> [NSDictionary] {
         
         // Create a new URL
-       // let remoteUrl:NSURL? = NSURL(string: "https://dl.dropboxusercontent.com/u/196547970/QuestionDat.json")
+        // let remoteUrl:NSURL? = NSURL(string: "https://dl.dropboxusercontent.com/u/196547970/QuestionDat.json")
         
         let remoteUrl:NSURL? = NSURL(string: GetJsonUrlInstance.JsonUrl)
-              
+        
         // Check if it's nil
         if let actualRemoteUrl = remoteUrl {
             
@@ -119,15 +106,12 @@ class ItemSideMenuModel: NSObject {
         return [NSDictionary]()
     }
     
-*/
     func getLocalJsonFile() -> [NSDictionary] {
         
         // Get an NSURL obj pointing to the json file in our app bundle
-       
-        // let appBundlePath:String? = NSBundle.mainBundle().pathForResource("Item2Data", ofType: "json")
-       // let appBundlePath:String? = NSBundle.mainBundle().pathForResource(GetJsonUrlInstance.JsonFileName, ofType: "json")
         
-        let appBundlePath:String? = NSBundle.mainBundle().pathForResource(JsonfileNameFromSideMenu, ofType: "json")
+        // let appBundlePath:String? = NSBundle.mainBundle().pathForResource("Item2Data", ofType: "json")
+        let appBundlePath:String? = NSBundle.mainBundle().pathForResource(GetJsonUrlInstance.JsonFileName, ofType: "json")
         
         // Use optional binding to check if path exists
         if let actualBundlePath = appBundlePath {

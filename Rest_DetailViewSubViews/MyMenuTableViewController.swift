@@ -88,7 +88,7 @@ class MyMenuTableViewController: UITableViewController {
         
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        var destViewController : UIViewController
+       var destViewController : UIViewController
         
     
         switch (indexPath.row) {
@@ -96,7 +96,11 @@ class MyMenuTableViewController: UITableViewController {
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
             break
         case 1:
+           // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
+
+            
+            
             break
         case 2:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as UIViewController
