@@ -11,8 +11,10 @@ import UIKit
 class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var myTableView: UITableView!
+    
+    
    var items:[Item2] = [Item2]()
-    let model:ItemModel = ItemModel()    
+    let model:SideItemModel = SideItemModel()
     override func viewDidLoad() {
         super.viewDidLoad()
        

@@ -84,80 +84,46 @@ class MyMenuTableViewController: UITableViewController {
         if (indexPath.row == selectedMenuItem) {
             return
         }
-        selectedMenuItem = indexPath.row
+       selectedMenuItem = indexPath.row
+        
+       
         
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-       var destViewController : UIViewController
-        
+        var destViewController : UIViewController = UIViewController()
+        var detailedViewController: ItemsViewController = ItemsViewController()
     
         switch (indexPath.row) {
         case 0:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
+            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
+             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
+            
             break
         case 1:
            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
+         detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
 
+         
+         //println("got here to this line")
             
             
             break
         case 2:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as UIViewController
+            detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as ItemsViewController
             break
        
         default:
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as UIViewController
+              detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as ItemsViewController
+              
             break
         }
         
-      
-        
-        sideMenuController()?.setContentViewController(destViewController)
+       //self.presentViewController(detailedViewController, animated: true, completion: nil)
+      sideMenuController()?.setContentViewController(destViewController)
+        sideMenuController()?.setContentViewController(detailedViewController)
     }
     
-     //MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    //test code begin
-    
-   // var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    
-    //It is instance of  `NewViewController` from storyboard
-    
-    //let vc : DetailViewController2 = storyboard.instantiateViewControllerWithIdentifier("DetailViewController2") as DetailViewController2
-    
-/*
-    //this might work need to work on init
-    func test() {
-        println("sideMenuWillClose")
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        let destViewController : UIViewController
-        
-      
-        
-        if (1 == 1 ){
-            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5") as UIViewController        }
-        
-        sideMenuController()?.setContentViewController(destViewController)
-        
-    }
-    
-*/
-    
-    
-    // Pass delegate and variable to vc which is DetailViewController2
-    
-    // vc.createAccountDelegate = self
-    
-    // vc.teststring = "hello"
-    
-    
-    //vc.transitioningDelegate = self
-    
-    //vc.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
-    
-    //sideMenuController()?.setContentViewController(vc)
+
 
     
     
