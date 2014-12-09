@@ -9,17 +9,16 @@
 import UIKit
 
 
-protocol SideBarTableViewControllerDelegate{
-    func sideBarControlDidSelectRow(indexPath:NSIndexPath)
-}
+//protocol SideBarTableViewControllerDelegate{
+   // func sideBarControlDidSelectRow(indexPath:NSIndexPath)
+//}
 
 class SideBarTableViewController: UITableViewController {
 
-    var delegate:SideBarTableViewControllerDelegate?
+   // var delegate:SideBarTableViewControllerDelegate?
     var tableData:Array<String> = []
     
-    
-    // MARK: - Table view data source
+    var selectedMenuItem : Int = 0    // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
         
@@ -62,10 +61,67 @@ class SideBarTableViewController: UITableViewController {
         return 45.0
     }
     
-    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        delegate?.sideBarControlDidSelectRow(indexPath)
+   // override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+      //  delegate?.sideBarControlDidSelectRow(indexPath)
+    //}
+
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        println("did select row: \(indexPath.row)")
+        
+        if (indexPath.row == selectedMenuItem) {
+            return
+        }
+        selectedMenuItem = indexPath.row
+        
+        
+        
+        //Present new view controller
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        var destViewController : UIViewController = UIViewController()
+        var detailedViewController: ItemsViewController = ItemsViewController()
+        
+        switch (indexPath.row) {
+        case 0:
+            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
+            
+            break
+            
+            
+        case 1:
+            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
+            detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
+            detailedViewController.jsonFileString = "Item2Data"
+            
+            
+            
+            
+            break
+        case 2:
+            detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
+            detailedViewController.jsonFileString = "3data"
+            break
+            
+        default:
+            detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
+            detailedViewController.jsonFileString = "Item2Data"
+            
+            break
+        }
+        
+        self.presentViewController(detailedViewController, animated: true, completion: nil)
+        
+        self.presentViewController(destViewController, animated: true, completion: nil)
+        
+        //sideMenuController()?.setContentViewController(destViewController)
+        //  sideMenuController()?.setContentViewController(detailedViewController)
     }
-
-
+    
+    
+    
+    
+    
 
 }

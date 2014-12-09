@@ -14,7 +14,7 @@ import UIKit
     optional func sideBarWillOpen()
 }
 
-class SideBar: NSObject, SideBarTableViewControllerDelegate {
+class SideBar: NSObject{
    
     let barWidth:CGFloat = 150.0
     let sideBarTableViewTopInset:CGFloat = 64.0
@@ -63,7 +63,7 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         sideBarContainerView.addSubview(blurView)
         
         
-        sideBarTableViewController.delegate = self
+ 
         sideBarTableViewController.tableView.frame = sideBarContainerView.bounds
         sideBarTableViewController.tableView.clipsToBounds = false
         sideBarTableViewController.tableView.separatorStyle = UITableViewCellSeparatorStyle.None

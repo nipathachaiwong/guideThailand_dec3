@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, SideBarDelegate {
+class ViewController: UIViewController{
     @IBOutlet weak var imageView: UIImageView!
     
     //newsidebar vars
@@ -20,47 +20,7 @@ class ViewController: UIViewController, SideBarDelegate {
       //  toggleSideMenuView()
     //}
     
-    @IBAction func saveButton(sender: AnyObject) {
-        
-        var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        
-        var itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
-        
-        var dataSet:NSMutableDictionary = NSMutableDictionary()
-        dataSet.setObject("i3", forKey: "itemTitel")
-        dataSet.setObject("3", forKey: "itemNote")
-      //  NSUserDefaults.standardUserDefaults().setObject(dataSet, forKey: "savedItemTest")
-        
-      /*  if (itemList) != nil { // data already available
-            var newMutableList:NSMutableArray = NSMutableArray();
-            
-            for dict:AnyObject in itemList!{
-                newMutableList.addObject(dict as NSDictionary)
-            }
-            
-            userDefaults.removeObjectForKey("itemList")
-            newMutableList.addObject(dataSet)
-            userDefaults.setObject(newMutableList, forKey: "itemList")
-            
-            
-        }else{ // This is the first todo item in the list
-            userDefaults.removeObjectForKey("itemList")
-            itemList = NSMutableArray()
-            itemList!.addObject(dataSet)
-            userDefaults.setObject(itemList, forKey: "itemList")
-        }
-        
-        userDefaults.synchronize()
-        
-        //read
-        */
-        
-      
-        
-      //  println(itemListFromUserDefaults)
-        
-        
-    }
+
     
     
     var r = "restaurants"
@@ -77,7 +37,7 @@ class ViewController: UIViewController, SideBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         sideBar = SideBar(sourceView: self.view, menuItems: self.model.data)
-        sideBar.delegate = self
+      //  sideBar.delegate = self
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -87,17 +47,8 @@ class ViewController: UIViewController, SideBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //newsidebar
-    
-    func sideBarDidSelectButtonAtIndex(index: Int) {
-        if index == 0{
-            imageView.backgroundColor = UIColor.redColor()
-            imageView.image = nil
-        } else if index == 1{
-            imageView.backgroundColor = UIColor.clearColor()
-            imageView.image = UIImage(named: "image2")
-        }
-    }
+  
+ 
     
     
     @IBAction func goToViewControler1(sender: AnyObject) {
