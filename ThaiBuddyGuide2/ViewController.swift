@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController{
-    @IBOutlet weak var imageView: UIImageView!
+   @IBOutlet weak var imageView: UIImageView!
     
     //newsidebar vars
     var sideBar:SideBar = SideBar()
@@ -28,18 +28,14 @@ class ViewController: UIViewController{
     var shop = "shopping"
     var m =  "massage"
     var n = "nightlife"
-    //test
-   //  var saveItemObj:SavedItemModel = SavedItemModel()
-    //test save item info
+ 
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sideBar = SideBar(sourceView: self.view, menuItems: self.model.data)
-      //  sideBar.delegate = self
-        
-        // Do any additional setup after loading the view, typically from a nib.
+    
     }
     
     override func didReceiveMemoryWarning() {

@@ -17,8 +17,7 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
 
     
     @IBAction func SideTable2HomeButton(sender: AnyObject) {
-        
-    }
+        self.dismissViewControllerAnimated(true,completion: nil)    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         

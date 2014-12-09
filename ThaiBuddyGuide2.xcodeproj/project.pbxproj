@@ -219,7 +219,6 @@
 				B40362EF1A2E1C13001F4232 /* Global Class Group */,
 				B4CF35001A35359C00AEF3DA /* SideMenuTableViews */,
 				B4E3E68A1A1B3CC200E84243 /* SideBar */,
-				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
 				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
 			);
 			path = ThaiBuddyGuide2;
@@ -331,6 +330,7 @@
 				B4DE99C11A36B8E5001EECC0 /* CustomCell.swift */,
 				B4DE99B51A36B396001EECC0 /* Item2Data.json */,
 				B441D3261A36CA6300F14EE3 /* 3data.json */,
+				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
 			);
 			name = SideMenuTableViews;
 			sourceTree = "<group>";

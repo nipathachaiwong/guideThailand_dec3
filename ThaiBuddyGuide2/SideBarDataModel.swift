@@ -9,5 +9,5 @@
 import UIKit
 
 class SideBarDataModel: NSObject {
-    let data:Array<String> = ["first item", "second item", "funny item", "another item"]
+    let data:Array<String> = ["Home", "Travel Tips", "Safety","Shopping Tips","Beware Scams!", "Useful Phrases", "Ask Me", "FeedBack","Restore Purchase"]
 }
