@@ -13,13 +13,36 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
     @IBOutlet weak var myTableView: UITableView!
     
     var jsonFileString: String = ""
+    //test sidebar
+
     
+    @IBAction func SideTable2HomeButton(sender: AnyObject) {
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        if (segue.identifier == "SideMenuTable2HomeSeque"){
+            var homeVC: ViewController = segue.destinationViewController as ViewController
+          
+        }
+        
+        
+        
+        
+    }
+
+
     
    var items:[Item2] = [Item2]()
     let model:SideItemModel = SideItemModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       //test
+        
+        
         self.setUpItems()
         
         self.myTableView.delegate = self

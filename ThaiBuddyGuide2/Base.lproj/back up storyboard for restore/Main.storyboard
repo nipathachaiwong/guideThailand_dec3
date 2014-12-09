@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6X-8Z-pAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1775" y="217"/>
+            <point key="canvasLocation" x="-2087" y="-307"/>
         </scene>
         <!--Home Page-->
         <scene sceneID="gNL-lF-5D6">
@@ -30,9 +30,12 @@
                         <viewControllerLayoutGuide type="bottom" id="Ty8-BX-M51"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yp9-s5-JfR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVX-gf-Gd6">
+                                <rect key="frame" x="0.0" y="20" width="346" height="591"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4f-eg-f0v">
                                 <rect key="frame" x="38" y="85" width="92" height="126"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -112,10 +115,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="JVX-gf-Gd6" id="9gf-BT-JaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keM-gz-Sne" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1353" y="217"/>
+            <point key="canvasLocation" x="-1593.5" y="-307.5"/>
         </scene>
         <!--Items View Controller2-->
         <scene sceneID="NGH-UP-6jD">
@@ -181,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Uh-6D-MLh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-907.5" y="252.5"/>
+            <point key="canvasLocation" x="-971.5" y="-25.5"/>
         </scene>
         <!--Detail View Controller2-->
         <scene sceneID="AYi-jY-xNo">
@@ -293,6 +299,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pjQ-H0-yrU"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="desciptionLabel" destination="J2D-P6-2gQ" id="Mav-Oy-t7i"/>
@@ -305,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuH-6e-SqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1847" y="1015"/>
+            <point key="canvasLocation" x="65" y="679"/>
         </scene>
         <!--Saved ItemVC-->
         <scene sceneID="prt-9I-c0V">
@@ -316,7 +323,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CSu-cv-5yC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qt8-04-zZk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhT-CR-kcP">
@@ -331,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Noa-OR-5Sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090" y="1078"/>
+            <point key="canvasLocation" x="-1409" y="650"/>
         </scene>
         <!--GoThereVC-->
         <scene sceneID="hzI-DW-TO6">
@@ -387,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOM-HH-vcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1868" y="1708"/>
+            <point key="canvasLocation" x="-1300" y="1384"/>
         </scene>
         <!--More Photos-->
         <scene sceneID="CFd-co-poW">
@@ -429,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKd-R8-cSE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1887" y="2440"/>
+            <point key="canvasLocation" x="-519" y="1384"/>
         </scene>
         <!--Web Video View Controller-->
         <scene sceneID="crL-kz-sqY">
@@ -481,127 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M33-EB-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1426" y="1834"/>
-        </scene>
-        <!--ViewController 4-->
-        <scene sceneID="TOl-YB-kVn">
-            <objects>
-                <viewController storyboardIdentifier="ViewController5" title="ViewController 4" id="EEm-qS-I7W" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wlr-Jr-eIs"/>
-                        <viewControllerLayoutGuide type="bottom" id="0II-XZ-KeY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="60l-iF-PTd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y27-ve-pZ8">
-                                <rect key="frame" x="97" y="274" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9G-lU-LgK">
-                                <rect key="frame" x="16" y="28" width="43" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="y27-ve-pZ8" secondAttribute="centerY" id="991-Xv-I0p"/>
-                            <constraint firstAttribute="centerX" secondItem="q9G-lU-LgK" secondAttribute="centerX" id="alz-Tw-4RU"/>
-                            <constraint firstItem="q9G-lU-LgK" firstAttribute="top" secondItem="y27-ve-pZ8" secondAttribute="bottom" constant="18" id="cfe-DT-nxp"/>
-                            <constraint firstAttribute="centerX" secondItem="y27-ve-pZ8" secondAttribute="centerX" id="tV6-A0-1lj"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qV0-Ye-xXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="203" y="574"/>
-        </scene>
-        <!--ViewController 3-->
-        <scene sceneID="F1F-F6-bGi">
-            <objects>
-                <viewController storyboardIdentifier="ViewController3" title="ViewController 3" id="uhL-dw-eF0" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sH0-aj-OZP"/>
-                        <viewControllerLayoutGuide type="bottom" id="SCh-nh-gI5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Ra-4j-YBL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQT-9e-ANR">
-                                <rect key="frame" x="97" y="274" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33c-S0-HC8">
-                                <rect key="frame" x="16" y="28" width="43" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="zQT-9e-ANR" secondAttribute="centerX" id="9rI-L3-8yi"/>
-                            <constraint firstAttribute="centerY" secondItem="zQT-9e-ANR" secondAttribute="centerY" id="aBd-aJ-aFR"/>
-                            <constraint firstItem="33c-S0-HC8" firstAttribute="top" secondItem="zQT-9e-ANR" secondAttribute="bottom" constant="18" id="gq5-v2-RR0"/>
-                            <constraint firstAttribute="centerX" secondItem="33c-S0-HC8" secondAttribute="centerX" id="hqE-C9-dtq"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y5y-AY-Km3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-173" y="594"/>
-        </scene>
-        <!--ViewController 2-->
-        <scene sceneID="oHh-Fw-Ozp">
-            <objects>
-                <viewController title="ViewController 2" id="uFR-1D-pjf" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="w7A-1F-OlQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="UYV-e9-MkB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eCu-dn-To2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0t-k4-lel">
-                                <rect key="frame" x="97" y="274" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHS-Mh-SEl">
-                                <rect key="frame" x="16" y="28" width="43" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="lHS-Mh-SEl" secondAttribute="centerX" id="3QX-Bl-BQX"/>
-                            <constraint firstItem="lHS-Mh-SEl" firstAttribute="top" secondItem="B0t-k4-lel" secondAttribute="bottom" constant="18" id="RTf-M3-fT7"/>
-                            <constraint firstAttribute="centerX" secondItem="B0t-k4-lel" secondAttribute="centerX" id="adH-pp-oBH"/>
-                            <constraint firstAttribute="centerY" secondItem="B0t-k4-lel" secondAttribute="centerY" id="yEP-5k-c2U"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J6l-Wm-pI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="203" y="-76"/>
+            <point key="canvasLocation" x="-918" y="1384"/>
         </scene>
         <!--Items View Controller-->
         <scene sceneID="Tfv-Lo-l5c">
@@ -616,7 +503,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PRG-Hs-esL">
-                                <rect key="frame" x="0.0" y="63" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="69" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellSide" id="ucZ-Nr-jl5" customClass="CustomCell" customModule="ThaiBuddyGuide2" customModuleProvider="target">
@@ -647,6 +534,27 @@
                                     <outlet property="delegate" destination="Or1-eF-zam" id="7Al-51-A5q"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6dy-dh-88J">
+                                <rect key="frame" x="0.0" y="-8" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="e3g-mR-ZQ9">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="xpO-1P-h4X">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bAL-3y-VKP">
+                                                <rect key="frame" x="16" y="13" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SideTable2HomeButton:" destination="Or1-eF-zam" eventType="touchUpInside" id="jvC-J8-LI3"/>
+                                                    <segue destination="PV9-tc-XUh" kind="modal" identifier="SideMenuTable2HomeSeque" id="Yh7-ve-wMB"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -658,7 +566,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Kj-NK-LkA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-509.5" y="1337.5"/>
+            <point key="canvasLocation" x="-2025.5" y="591.5"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="Qr8-v6-CVI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qsN-pM-V0y" customClass="ENSideMenuNavigationController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6x6-UO-bx3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tXA-Ko-xF8" kind="relationship" relationship="rootViewController" id="j5D-0X-8ey"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqe-WV-1HP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-467" y="679"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -668,5 +594,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="yrH-eH-bbC"/>
+        <segue reference="Yh7-ve-wMB"/>
     </inferredMetricsTieBreakers>
 </document>

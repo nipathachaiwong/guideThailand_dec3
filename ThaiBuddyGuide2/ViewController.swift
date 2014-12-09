@@ -8,9 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SideBarDelegate {
+    @IBOutlet weak var imageView: UIImageView!
     
- 
+    //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var model:SideBarDataModel = SideBarDataModel()
+    
+    
+   // @IBAction func toggleSideMenu(sender: AnyObject) {
+      //  toggleSideMenuView()
+    //}
     
     @IBAction func saveButton(sender: AnyObject) {
         
@@ -68,6 +76,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sideBar = SideBar(sourceView: self.view, menuItems: self.model.data)
+        sideBar.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -75,6 +86,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //newsidebar
+    
+    func sideBarDidSelectButtonAtIndex(index: Int) {
+        if index == 0{
+            imageView.backgroundColor = UIColor.redColor()
+            imageView.image = nil
+        } else if index == 1{
+            imageView.backgroundColor = UIColor.clearColor()
+            imageView.image = UIImage(named: "image2")
+        }
+    }
+    
     
     @IBAction func goToViewControler1(sender: AnyObject) {
     }
@@ -110,9 +134,7 @@ class ViewController: UIViewController {
         }
       
        
-//   @IBAction func toggleSideMenu(sender: AnyObject) {
-   //     toggleSideMenuView()
-   // }
+
     
 }
 }

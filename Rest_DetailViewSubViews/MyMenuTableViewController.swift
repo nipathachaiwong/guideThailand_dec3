@@ -99,12 +99,14 @@ class MyMenuTableViewController: UITableViewController {
              destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
             
             break
+            
+        
         case 1:
            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
          detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
          detailedViewController.jsonFileString = "Item2Data"
          
-         //println("got here to this line")
+       
             
             
             break
@@ -120,9 +122,9 @@ class MyMenuTableViewController: UITableViewController {
             break
         }
         
-       //self.presentViewController(detailedViewController, animated: true, completion: nil)
+    self.presentViewController(detailedViewController, animated: true, completion: nil)
       sideMenuController()?.setContentViewController(destViewController)
-        sideMenuController()?.setContentViewController(detailedViewController)
+   //  sideMenuController()?.setContentViewController(detailedViewController)
     }
     
 

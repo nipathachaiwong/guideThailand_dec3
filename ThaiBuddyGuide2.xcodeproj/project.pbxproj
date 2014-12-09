@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B441D3271A36CA6300F14EE3 /* 3data.json in Resources */ = {isa = PBXBuildFile; fileRef = B441D3261A36CA6300F14EE3 /* 3data.json */; };
+		B441D32C1A3761D100F14EE3 /* SideBarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441D32B1A3761D100F14EE3 /* SideBarDataModel.swift */; };
+		B441D32E1A3761D900F14EE3 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441D32D1A3761D900F14EE3 /* SideBarTableViewController.swift */; };
+		B441D3301A3761E000F14EE3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441D32F1A3761E000F14EE3 /* SideBar.swift */; };
 		B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */; };
 		B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE061A1A8B2E007F3CD7 /* ViewController.swift */; };
 		B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */; };
@@ -52,7 +55,6 @@
 		B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D2CDFD1A2009F000B02E7E /* Main.storyboard */; };
 		B4DE99B41A36B0F4001EECC0 /* TravelTips.json in Resources */ = {isa = PBXBuildFile; fileRef = B4DE99B31A36B0F4001EECC0 /* TravelTips.json */; };
 		B4DE99B61A36B396001EECC0 /* Item2Data.json in Resources */ = {isa = PBXBuildFile; fileRef = B4DE99B51A36B396001EECC0 /* Item2Data.json */; };
-		B4DE99B81A36B3A7001EECC0 /* GetJsonUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE99B71A36B3A7001EECC0 /* GetJsonUrl.swift */; };
 		B4DE99BA1A36B7BD001EECC0 /* SavedItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE99B91A36B7BD001EECC0 /* SavedItemVC.swift */; };
 		B4DE99BC1A36B7CB001EECC0 /* SavedItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE99BB1A36B7CB001EECC0 /* SavedItemModel.swift */; };
 		B4DE99BE1A36B827001EECC0 /* SideItemModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE99BD1A36B827001EECC0 /* SideItemModel .swift */; };
@@ -78,6 +80,9 @@
 
 /* Begin PBXFileReference section */
 		B441D3261A36CA6300F14EE3 /* 3data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3data.json; sourceTree = "<group>"; };
+		B441D32B1A3761D100F14EE3 /* SideBarDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarDataModel.swift; sourceTree = "<group>"; };
+		B441D32D1A3761D900F14EE3 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
+		B441D32F1A3761E000F14EE3 /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		B446ADFF1A1A8B2E007F3CD7 /* ThaiBuddyGuide2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiBuddyGuide2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B446AE031A1A8B2E007F3CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,7 +131,6 @@
 		B4D2CDFD1A2009F000B02E7E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Base.lproj/back up storyboard for restore/Main.storyboard"; sourceTree = "<group>"; };
 		B4DE99B31A36B0F4001EECC0 /* TravelTips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TravelTips.json; sourceTree = "<group>"; };
 		B4DE99B51A36B396001EECC0 /* Item2Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Item2Data.json; sourceTree = "<group>"; };
-		B4DE99B71A36B3A7001EECC0 /* GetJsonUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetJsonUrl.swift; sourceTree = "<group>"; };
 		B4DE99B91A36B7BD001EECC0 /* SavedItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedItemVC.swift; path = "New Folder With Items/SavedItemVC.swift"; sourceTree = "<group>"; };
 		B4DE99BB1A36B7CB001EECC0 /* SavedItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedItemModel.swift; path = "New Folder With Items/SavedItemModel.swift"; sourceTree = "<group>"; };
 		B4DE99BD1A36B827001EECC0 /* SideItemModel .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SideItemModel .swift"; sourceTree = "<group>"; };
@@ -172,6 +176,16 @@
 			name = "Global Class Group";
 			sourceTree = "<group>";
 		};
+		B441D32A1A37609E00F14EE3 /* NewSideBar */ = {
+			isa = PBXGroup;
+			children = (
+				B441D32D1A3761D900F14EE3 /* SideBarTableViewController.swift */,
+				B441D32F1A3761E000F14EE3 /* SideBar.swift */,
+				B441D32B1A3761D100F14EE3 /* SideBarDataModel.swift */,
+			);
+			name = NewSideBar;
+			sourceTree = "<group>";
+		};
 		B446ADF61A1A8B2E007F3CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +215,7 @@
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 				B4DE99B91A36B7BD001EECC0 /* SavedItemVC.swift */,
 				B4DE99BB1A36B7CB001EECC0 /* SavedItemModel.swift */,
+				B441D32A1A37609E00F14EE3 /* NewSideBar */,
 				B40362EF1A2E1C13001F4232 /* Global Class Group */,
 				B4CF35001A35359C00AEF3DA /* SideMenuTableViews */,
 				B4E3E68A1A1B3CC200E84243 /* SideBar */,
@@ -313,7 +328,6 @@
 				B4DE99C51A36BB2D001EECC0 /* SideDetailViewController.swift */,
 				B4DE99BD1A36B827001EECC0 /* SideItemModel .swift */,
 				B4DE99C31A36B943001EECC0 /* item.swift */,
-				B4DE99B71A36B3A7001EECC0 /* GetJsonUrl.swift */,
 				B4DE99C11A36B8E5001EECC0 /* CustomCell.swift */,
 				B4DE99B51A36B396001EECC0 /* Item2Data.json */,
 				B441D3261A36CA6300F14EE3 /* 3data.json */,
@@ -465,11 +479,13 @@
 				B4C719231A2E6D070041307A /* MyMenuTableViewController.swift in Sources */,
 				B4DE99C61A36BB2D001EECC0 /* SideDetailViewController.swift in Sources */,
 				B4DE99C21A36B8E5001EECC0 /* CustomCell.swift in Sources */,
+				B441D32C1A3761D100F14EE3 /* SideBarDataModel.swift in Sources */,
+				B441D32E1A3761D900F14EE3 /* SideBarTableViewController.swift in Sources */,
 				B4BC1DA71A28ED47008F0A7F /* DetailViewController2.swift in Sources */,
 				B4BC1DA31A28C9C0008F0A7F /* ItemModel.swift in Sources */,
-				B4DE99B81A36B3A7001EECC0 /* GetJsonUrl.swift in Sources */,
 				B4C719211A2E6CFC0041307A /* MyNavigationController.swift in Sources */,
 				B4C7191F1A2E6CE30041307A /* WebVideoViewController.swift in Sources */,
+				B441D3301A3761E000F14EE3 /* SideBar.swift in Sources */,
 				B4E3E6A11A1B51E600E84243 /* CustomCell2.swift in Sources */,
 				B4E3E6861A1B3A9800E84243 /* ENSideMenu.swift in Sources */,
 				B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */,

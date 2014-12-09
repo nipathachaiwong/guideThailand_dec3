@@ -12,9 +12,7 @@ import UIKit
 
 class DetailViewController2: UIViewController{
 
-    
 
-    @IBOutlet weak var navigationBar: UINavigationBar!
     
     @IBOutlet weak var myDetailedImageView: UIImageView!
    
@@ -56,7 +54,7 @@ class DetailViewController2: UIViewController{
         super.viewDidLoad()
 
         
-        
+         var sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: MyMenuTableViewController(), menuPosition:.Left)
      
     
         
