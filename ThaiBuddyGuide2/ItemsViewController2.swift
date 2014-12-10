@@ -24,6 +24,10 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     var sideBar:SideBar = SideBar()
     var modelSide:SideBarDataModel = SideBarDataModel()
     
+    @IBAction func showSideBar(sender: AnyObject) {
+        self.sideBar.showSideBar(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       

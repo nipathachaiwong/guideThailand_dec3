@@ -30,6 +30,10 @@ class DetailViewController2: UIViewController{
     var sideBar:SideBar = SideBar()
     var modelSide:SideBarDataModel = SideBarDataModel()
 
+    @IBAction func showSideBar(sender: AnyObject) {
+        self.sideBar.showSideBar(true)
+    }
+    
     @IBAction func backButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true,completion: nil)
 
@@ -105,9 +109,9 @@ class DetailViewController2: UIViewController{
     
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-       var nextVC: MapViewController = segue.destinationViewController as MapViewController
+     //  var nextVC: MapViewController = segue.destinationViewController as MapViewController
         
-        nextVC.itemNamefromDetail = itemString!
+      //  nextVC.itemNamefromDetail = itemString!
         
         if (segue.identifier == "goToSque"){
             var mapVC: MapViewController = segue.destinationViewController as MapViewController

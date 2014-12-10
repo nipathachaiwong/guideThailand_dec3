@@ -13,6 +13,7 @@
 		B441D3301A3761E000F14EE3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441D32F1A3761E000F14EE3 /* SideBar.swift */; };
 		B441D3931A37B70E00F14EE3 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = B441D3911A37B70E00F14EE3 /* burger.png */; };
 		B441D3941A37B70E00F14EE3 /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B441D3921A37B70E00F14EE3 /* burger@2x.png */; };
+		B441D3961A37C57900F14EE3 /* first Place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B441D3951A37C57900F14EE3 /* first Place.mp3 */; };
 		B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */; };
 		B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE061A1A8B2E007F3CD7 /* ViewController.swift */; };
 		B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */; };
@@ -28,7 +29,6 @@
 		B4BC1DA71A28ED47008F0A7F /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */; };
 		B4BC1DA91A28EEA9008F0A7F /* ItemsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */; };
 		B4BC1DAF1A290D0F008F0A7F /* 2nd location.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */; };
-		B4BC1DB01A290D0F008F0A7F /* first Place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DAE1A290D0F008F0A7F /* first Place.mp3 */; };
 		B4BC1DB61A291246008F0A7F /* first Place6@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DB11A291246008F0A7F /* first Place6@2x.jpg */; };
 		B4BC1DB71A291246008F0A7F /* first Place5@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DB21A291246008F0A7F /* first Place5@2x.jpg */; };
 		B4BC1DB81A291246008F0A7F /* first Place4@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DB31A291246008F0A7F /* first Place4@2x.jpg */; };
@@ -87,6 +87,7 @@
 		B441D32F1A3761E000F14EE3 /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		B441D3911A37B70E00F14EE3 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
 		B441D3921A37B70E00F14EE3 /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
+		B441D3951A37C57900F14EE3 /* first Place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "first Place.mp3"; sourceTree = "<group>"; };
 		B446ADFF1A1A8B2E007F3CD7 /* ThaiBuddyGuide2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiBuddyGuide2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B446AE031A1A8B2E007F3CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 		B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
 		B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController2.swift; sourceTree = "<group>"; };
 		B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2nd location.mp3"; sourceTree = "<group>"; };
-		B4BC1DAE1A290D0F008F0A7F /* first Place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "first Place.mp3"; sourceTree = "<group>"; };
 		B4BC1DB11A291246008F0A7F /* first Place6@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place6@2x.jpg"; sourceTree = "<group>"; };
 		B4BC1DB21A291246008F0A7F /* first Place5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place5@2x.jpg"; sourceTree = "<group>"; };
 		B4BC1DB31A291246008F0A7F /* first Place4@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place4@2x.jpg"; sourceTree = "<group>"; };
@@ -176,6 +176,7 @@
 				B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */,
 				B4BC1DA01A28C8F3008F0A7F /* Item2.swift */,
 				B4BC1DA21A28C9C0008F0A7F /* ItemModel.swift */,
+				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
 			);
 			name = "Global Class Group";
 			sourceTree = "<group>";
@@ -215,12 +216,14 @@
 		B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */ = {
 			isa = PBXGroup;
 			children = (
+				B441D3951A37C57900F14EE3 /* first Place.mp3 */,
 				B4D2CDFD1A2009F000B02E7E /* Main.storyboard */,
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 				B4DE99B91A36B7BD001EECC0 /* SavedItemVC.swift */,
 				B4DE99BB1A36B7CB001EECC0 /* SavedItemModel.swift */,
 				B40362EF1A2E1C13001F4232 /* Global Class Group */,
 				B4CF35001A35359C00AEF3DA /* SideMenuTableViews */,
+				B4BC1DAC1A290D02008F0A7F /* test data */,
 				B441D32A1A37609E00F14EE3 /* NewSideBar */,
 				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
@@ -239,7 +242,6 @@
 				B446AE031A1A8B2E007F3CD7 /* Info.plist */,
 				B441D3911A37B70E00F14EE3 /* burger.png */,
 				B441D3921A37B70E00F14EE3 /* burger@2x.png */,
-				B4BC1DAC1A290D02008F0A7F /* test data */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -284,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */,
-				B4BC1DAE1A290D0F008F0A7F /* first Place.mp3 */,
 			);
 			name = "test data";
 			sourceTree = "<group>";
@@ -336,7 +337,6 @@
 				B4DE99C11A36B8E5001EECC0 /* CustomCell.swift */,
 				B4DE99B51A36B396001EECC0 /* Item2Data.json */,
 				B441D3261A36CA6300F14EE3 /* 3data.json */,
-				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
 			);
 			name = SideMenuTableViews;
 			sourceTree = "<group>";
@@ -438,6 +438,7 @@
 				B441D3941A37B70E00F14EE3 /* burger@2x.png in Resources */,
 				B4BC1DBF1A291340008F0A7F /* first Place1@2x.jpg in Resources */,
 				B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */,
+				B441D3961A37C57900F14EE3 /* first Place.mp3 in Resources */,
 				B441D3931A37B70E00F14EE3 /* burger.png in Resources */,
 				B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */,
 				B4C3A0E71A22990F00A96225 /* bild-05@2x.jpg in Resources */,
@@ -450,7 +451,6 @@
 				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
 				B4C7192B1A2E74BB0041307A /* nightlife.json in Resources */,
 				B4BC1DB71A291246008F0A7F /* first Place5@2x.jpg in Resources */,
-				B4BC1DB01A290D0F008F0A7F /* first Place.mp3 in Resources */,
 				B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */,
 				B4BC1DB61A291246008F0A7F /* first Place6@2x.jpg in Resources */,
 				B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */,

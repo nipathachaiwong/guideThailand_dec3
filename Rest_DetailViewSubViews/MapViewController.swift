@@ -27,6 +27,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
     }
     
+    //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var modelSide:SideBarDataModel = SideBarDataModel()
+    
+    @IBAction func showSideBar(sender: AnyObject) {
+        self.sideBar.showSideBar(true)
+    }
     
     
 
@@ -37,6 +44,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         sideBar = SideBar(sourceView: self.view, menuItems: self.modelSide.data)
         
         // test data was sent
         
@@ -69,12 +77,17 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // 5. update zoom and add marker
         mappy.setRegion(region, animated: true)
         mappy.addAnnotation(annotation)
-        
+    
+       
         // Audio of directions
-            var SoundUrl:NSURL? = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource((itemNamefromDetail), ofType: "mp3")!)
+        
+        //var SoundUrl:NSURL? = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource((itemNamefromDetail), ofType: "mp3")!)
+        
+        var SoundUrl:NSURL? = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(itemNamefromDetail, ofType: "mp3")!)
+
             if (SoundUrl != nil) {
                 self.audioPlayer = AVAudioPlayer(contentsOfURL: SoundUrl!, error: nil)
-            }
+          }
 
        
     }
@@ -89,9 +102,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
   
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   // override func didReceiveMemoryWarning() {
+    //    super.didReceiveMemoryWarning()
+    
+    
+    // Dispose of any resources that can be recreated.
    
 
     /*
@@ -104,5 +119,5 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     */
 
-}
+//}
 }

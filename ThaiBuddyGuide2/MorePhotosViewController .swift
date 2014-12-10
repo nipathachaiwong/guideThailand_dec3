@@ -20,10 +20,18 @@ class MorePhotosViewController: UIViewController, UIScrollViewDelegate {
         self.dismissViewControllerAnimated(true,completion: nil)
         
     }
+  //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var modelSide:SideBarDataModel = SideBarDataModel()
     
+    @IBAction func showSideBar(sender: AnyObject) {
+        self.sideBar.showSideBar(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sideBar = SideBar(sourceView: self.view, menuItems: self.modelSide.data)
         
 //        view.backgroundColor = UIColor.blackColor()
         

@@ -11,13 +11,13 @@ import UIKit
 class WebVideoViewController: UIViewController {
     
     //embed setting custom size 250 x 188
- //  var URLPathGoThere = "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0"
+  // var URLPathGoThere = "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0"
     
-  // var URLPathWhileThere = "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0"
+ //var URLPathWhileThere = "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0"
     
-    var URLPathGoThere : String = ""
+  var URLPathGoThere : String = ""
     
-    var URLPathWhileThere : String = ""
+  var URLPathWhileThere : String = ""
 
     
     @IBAction func backButton(sender: AnyObject) {
@@ -25,7 +25,13 @@ class WebVideoViewController: UIViewController {
         
     }
     
-   
+    //newsidebar vars
+    var sideBar:SideBar = SideBar()
+    var modelSide:SideBarDataModel = SideBarDataModel()
+    
+    @IBAction func showSideBar(sender: AnyObject) {
+        self.sideBar.showSideBar(true)
+    }
     
     
     
@@ -35,6 +41,8 @@ class WebVideoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         sideBar = SideBar(sourceView: self.view, menuItems: self.modelSide.data)
     
         println("inwebview"+URLPathGoThere)
         println(URLPathWhileThere)

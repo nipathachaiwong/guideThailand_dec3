@@ -52,8 +52,26 @@ home page buttons for main vc template
 12/2 savebutton array-- use nsuserdefaults **** still needs to be done correctly. NOTE: Value currently on save one to nsdictionary at a time see code in : ItemsVC2
 look here : http://stackoverflow.com/questions/24112627/initialising-empty-arrays-of-dictionaries-in-swift
 
-12/7 sidebar menu detailviews ( content views)
+12/10 sidebar menu detailviews ( content views)
+
+-thai audio files for each location label by name from json data files
+
+-Common Pharses
+-Ask me
+-Feeback
+-Restore Purchase
+
+to do :
+-iad
+-in app purchase
+-composite designs
+-add contraints
+-audio files for each location
+-type out thai names
+
+______________Content to write below___________________
 -safety tips
+
 
 -avoid common scams
         -gem scam
@@ -76,18 +94,7 @@ look here : http://stackoverflow.com/questions/24112627/initialising-empty-array
 
 -Shopping tips
         
--Common Pharses
--Ask me
--Feeback
--Restore Purchase
 
-to do :
--iad
--in app purchase
--composite designs
--add contraints
--audio files for each location
--type out thai names
 
 
 
