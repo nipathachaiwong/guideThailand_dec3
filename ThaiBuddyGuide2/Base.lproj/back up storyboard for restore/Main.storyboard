@@ -163,7 +163,7 @@
                                 <rect key="frame" x="0.0" y="115" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="cell2" id="pBm-RW-meY" customClass="CustomCell2" customModule="ThaiBuddyGuide2" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cell2" editingAccessoryType="checkmark" id="pBm-RW-meY" customClass="CustomCell2" customModule="ThaiBuddyGuide2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pBm-RW-meY" id="FBN-xg-Rfv">
@@ -181,6 +181,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="accessoryView" destination="j7q-In-qGO" id="boy-mx-ev5"/>
+                                            <outlet property="editingAccessoryView" destination="j7q-In-qGO" id="OuD-z1-k6E"/>
                                             <outlet property="label" destination="8lh-Yh-1t5" id="YPz-vE-QaF"/>
                                             <outlet property="myImageView" destination="gg4-CT-9el" id="oa5-HU-vg1"/>
                                         </connections>
@@ -336,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuH-6e-SqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="679"/>
+            <point key="canvasLocation" x="-757" y="668"/>
         </scene>
         <!--Saved ItemVC-->
         <scene sceneID="prt-9I-c0V">
@@ -754,7 +756,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBy-0A-39T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="679"/>
+            <point key="canvasLocation" x="-125" y="650"/>
         </scene>
     </scenes>
     <resources>

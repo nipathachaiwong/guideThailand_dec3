@@ -200,6 +200,7 @@
 				B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */,
 				B446AE171A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests */,
 				B446AE001A1A8B2E007F3CD7 /* Products */,
+				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B46BB25E1A1D339A00D81FBE /* Main VC */,
 			);
 			sourceTree = "<group>";
@@ -216,7 +217,6 @@
 		B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */ = {
 			isa = PBXGroup;
 			children = (
-				B441D3951A37C57900F14EE3 /* first Place.mp3 */,
 				B4D2CDFD1A2009F000B02E7E /* Main.storyboard */,
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 				B4DE99B91A36B7BD001EECC0 /* SavedItemVC.swift */,
@@ -225,7 +225,6 @@
 				B4CF35001A35359C00AEF3DA /* SideMenuTableViews */,
 				B4BC1DAC1A290D02008F0A7F /* test data */,
 				B441D32A1A37609E00F14EE3 /* NewSideBar */,
-				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
 			);
 			path = ThaiBuddyGuide2;
@@ -286,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */,
+				B441D3951A37C57900F14EE3 /* first Place.mp3 */,
 			);
 			name = "test data";
 			sourceTree = "<group>";
@@ -350,6 +350,7 @@
 				B4C719221A2E6D070041307A /* MyMenuTableViewController.swift */,
 			);
 			name = SideBar;
+			path = ThaiBuddyGuide2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

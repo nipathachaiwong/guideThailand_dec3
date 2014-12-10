@@ -85,20 +85,15 @@ class SideBarTableViewController: UITableViewController {
         switch (indexPath.row) {
         case 0:
             homeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as ViewController
-           // self.presentViewController(homeViewController, animated: true, completion: nil)
+           
             
             break
+            case 1:
             
-            
-        case 1:
-            // destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as UIViewController
             detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
             detailedViewController.jsonFileString = "Item2Data"
-            
-            
-            
-            
             break
+            
         case 2:
             detailedViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController2") as ItemsViewController
             detailedViewController.jsonFileString = "3data"
@@ -115,8 +110,7 @@ class SideBarTableViewController: UITableViewController {
         
       self.presentViewController(homeViewController, animated: true, completion: nil)
         
-        //sideMenuController()?.setContentViewController(destViewController)
-        //  sideMenuController()?.setContentViewController(detailedViewController)
+
     }
     
     

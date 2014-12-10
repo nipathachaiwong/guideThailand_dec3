@@ -56,7 +56,7 @@ look here : http://stackoverflow.com/questions/24112627/initialising-empty-array
 
 -thai audio files for each location label by name from json data files
 
--Common Pharses
+
 -Ask me
 -Feeback
 -Restore Purchase
@@ -72,7 +72,7 @@ to do :
 ______________Content to write below___________________
 -safety tips
 
-
+-Common Pharses
 -avoid common scams
         -gem scam
         -tuk tuk ride to get commission
